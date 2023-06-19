@@ -11,12 +11,12 @@ const Navbar = () => {
         <Link href="/about" className="lg:text-lg">
           About
         </Link>
-        <Link href="#" className="lg:text-lg">
+        <Link href="/work" className="lg:text-lg">
           Work
         </Link>
-        <Link href="#" className="lg:text-lg">
+        <a href="#" target="_blank" className="lg:text-lg">
           Resume
-        </Link>
+        </a>
       </div>
       <Menu />
     </nav>

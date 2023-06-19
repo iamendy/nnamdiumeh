@@ -1,13 +1,20 @@
 import Arrow from "@/components/icons/Arrow";
 
+import Link from "next/link";
+
 const Work = ({ alt = false }) => {
   return (
     <div className={`lg:w-[80%] lg:flex ${alt && "lg:ml-auto"}`}>
       <div className={`${alt && "order-2"}`}>
-        <img src="/img/job-alert.webp" alt="job-alert" />
+        <Link href="/works/job-description">
+          <img src="/img/job-alert.webp" alt="job-alert" />
+        </Link>
       </div>
 
-      <div className={`lg:order-1 ${alt ? "mr-5" : "lg:ml-5"}`}>
+      <Link
+        href="/works/job-description"
+        className={`lg:order-1 ${alt ? "mr-5" : "lg:ml-5"}`}
+      >
         <div
           className={`flex justify-between my-3 lg:my-0 lg:space-y-2 lg:flex-col ${
             alt && "items-end"
@@ -29,7 +36,7 @@ const Work = ({ alt = false }) => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
           aspernatur distinctio excepturi veritatis eum alias!
         </p>
-      </div>
+      </Link>
     </div>
   );
 };
