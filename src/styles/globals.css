@@ -5,3 +5,19 @@
 body {
   @apply bg-black text-white;
 }
+
+/* .likes:hover {
+  animation-play-state: paused;
+} */
+.likes {
+  animation: scrollText 15s infinite linear;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-70%);
+  }
+}

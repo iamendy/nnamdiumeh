@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import MobileMenu from "./MobileMenu";
+import Footer from "./Footer";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -7,6 +8,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <Navbar />
       <MobileMenu />
       {children}
+      <Footer />
     </>
   );
 };
