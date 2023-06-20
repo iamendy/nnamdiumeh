@@ -2,6 +2,7 @@ import { motion, useScroll, useMotionValue, useSpring } from "framer-motion";
 import Work from "@/components/Work";
 import Arrow from "@/components/icons/Arrow";
 import Blog from "@/components/Blog";
+import Link from "next/link";
 
 export default function Home() {
   const { scrollYProgress, scrollY } = useScroll();
@@ -70,6 +71,15 @@ export default function Home() {
           <Work />
 
           <Work alt />
+        </div>
+
+        <div className="flex items-center justify-center mt-9 lg:mt-24">
+          <Link
+            href="/works"
+            className="rounded-lg border border-white/20 p-3 flex items-center w-fit"
+          >
+            <span>View Portfolio</span> &nbsp; <Arrow />
+          </Link>
         </div>
       </section>
 

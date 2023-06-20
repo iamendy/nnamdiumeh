@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between px-[24px] lg:px-[48px] h-20">
+    <nav className="flex items-center justify-between px-[24px] lg:px-[48px] h-20 lg:h-28">
       <Link href="/" className="lg:text-lg inline-block">
         Nnamdi Umeh
       </Link>
@@ -11,7 +11,7 @@ const Navbar = () => {
         <Link href="/about" className="lg:text-lg">
           About
         </Link>
-        <Link href="/work" className="lg:text-lg">
+        <Link href="/works" className="lg:text-lg">
           Work
         </Link>
         <a href="#" target="_blank" className="lg:text-lg">
