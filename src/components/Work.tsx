@@ -1,10 +1,18 @@
 import Arrow from "@/components/icons/Arrow";
-
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 const Work = ({ alt = false }) => {
   return (
-    <div className={`lg:w-[80%] lg:flex ${alt && "lg:ml-auto"}`}>
+    <motion.div
+      initial={{ opacity: 0, y: 0 }}
+      whileInView={{
+        opacity: 1,
+        y: -50,
+        transition: { duration: 0.8 },
+      }}
+      className={`lg:w-[80%] lg:flex ${alt && "lg:ml-auto"}`}
+    >
       <div className={`${alt && "order-2"}`}>
         <Link href="/works/job-description">
           <img src="/img/job-alert.webp" alt="job-alert" />
@@ -37,7 +45,7 @@ const Work = ({ alt = false }) => {
           aspernatur distinctio excepturi veritatis eum alias!
         </p>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 export default Work;

@@ -3,72 +3,16 @@ import Work from "@/components/Work";
 import Arrow from "@/components/icons/Arrow";
 import Blog from "@/components/Blog";
 import Link from "next/link";
-
-const hero = {
-  hidden: {
-    y: 30,
-  },
-  visible: {
-    y: 0,
-    transition: {
-      delay: 0.3,
-      duration: 1,
-      type: "ease",
-      staggerChildren: 0.5,
-    },
-  },
-};
-
-const slideUpHero = {
-  hidden: {
-    y: 20,
-  },
-  visible: (custom: number) => ({
-    y: 0,
-    transition: {
-      delay: custom * 0.1,
-      duration: custom * 0.3,
-      type: "ease",
-    },
-  }),
-};
-
-const slideUp = {
-  hidden: {
-    y: 20,
-    opacity: [0, 0, 0, 0],
-  },
-  visible: (custom: number) => ({
-    y: 0,
-    opacity: [0, 0.4, 0.8, 1],
-    transition: {
-      delay: custom * 0.1,
-      duration: 0.3,
-      type: "ease",
-    },
-  }),
-};
-
-const opacity = {
-  hidden: {
-    opacity: [0, 0, 0, 0],
-  },
-  visible: (custom: number) => ({
-    opacity: [0, 0.4, 0.8, 1],
-    transition: {
-      delay: custom * 0.1,
-    },
-  }),
-};
-
+import { slideUp, opacity, hero, slideUpHero } from "@/lib/motion";
+import { useRef } from "react";
 export default function Home() {
-  const { scrollYProgress, scrollY } = useScroll();
+  const containerRef = useRef(null);
+  const { scrollY } = useScroll();
   const y = useSpring(scrollY, { stiffness: 100 });
-  const x = useMotionValue(0);
 
   return (
     <>
-      <section className="px-[24px] lg:px-[48px] flex flex-col space-y-9 lg: lg:space-y-16 py-28 lg:pt-[150px] lg:pb-[200px]">
+      <section className="px-[24px] lg:px-[48px] flex flex-col space-y-9 lg: lg:space-y-16 pt-48 pb-28 lg:pt-[250px] lg:pb-[200px]">
         {/* Desktop view animation */}
         <motion.div
           variants={hero}
@@ -178,7 +122,7 @@ export default function Home() {
           <div className="mt-12 lg:mt-0 flex justify-end lg:justify-start lg:w-[40%] lg:order-1">
             <motion.div
               variants={opacity}
-              custom={15}
+              custom={12}
               initial="hidden"
               animate="visible"
               className="relative w-16 h-16 lg:w-24 lg:h-24 ml-24 rounded-full overflow-clip border 
@@ -194,13 +138,16 @@ export default function Home() {
         </motion.div>
       </section>
 
-      <section className="my-[200px] flex flex-col flex-nowrap  items-center overflow-clip">
+      <section
+        ref={containerRef}
+        className="my-[200px] flex flex-col flex-nowrap  items-center overflow-clip"
+      >
         <div className="w-[2000px] lg:w-[3000px] flex justify-start">
           <motion.p
             className="element translate-x-[-100px] text-[32px] leading-[1.4em] lg:text-[80px] font-semibold"
+            initial={{ translateX: "50%" }}
             style={{
               translateX: scrollY,
-              perspective: "1200px",
             }}
           >
             Product Design • Digital Design • 3D Art • Digital Design • 3D Art•
@@ -217,7 +164,10 @@ export default function Home() {
 
       <section className=" bg-black px-[24px] lg:px-[48px] py-28">
         <motion.h3
-          whileInView={slideUp}
+          variants={opacity}
+          initial="hidden"
+          whileInView="visible"
+          custom={1}
           className="text-[32px] lg:text-[56px] text-white font-extrabold mb-24 lg:mb-[10rem]"
         >
           Featured Work
@@ -240,9 +190,15 @@ export default function Home() {
       </section>
 
       <section className=" bg-black px-[24px] lg:px-[48px] py-28">
-        <h3 className="text-[32px] lg:text-[56px] text-white font-extrabold mb-24 lg:mb-[10rem]">
+        <motion.h3
+          variants={opacity}
+          initial="hidden"
+          whileInView="visible"
+          custom={1}
+          className="text-[32px] lg:text-[56px] text-white font-extrabold mb-24 lg:mb-[10rem]"
+        >
           Featured Blog
-        </h3>
+        </motion.h3>
 
         <div className="flex flex-col space-y-20 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-4">
           <Blog />

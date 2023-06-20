@@ -1,9 +1,15 @@
 import Arrow from "./icons/Arrow";
+import { motion, useScroll } from "framer-motion";
 
 const Footer = () => {
+  const { scrollYProgress } = useScroll();
+
   return (
     <>
-      <section className=" bg-black px-[24px] lg:px-[48px] py-28">
+      <motion.section
+        style={{ opacity: scrollYProgress }}
+        className=" bg-black px-[24px] lg:px-[48px] py-28"
+      >
         <div className="lg:grid lg:grid-cols-2">
           <div className="flex flex-col">
             <div>
@@ -52,7 +58,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       <hr className="border-t border-t-white/20 w-[calc(100%-48px)] mx-auto mb-8 px-[24px] lg:px-[48px]" />
 

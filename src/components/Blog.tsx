@@ -1,8 +1,17 @@
 import Clock from "./icons/Clock";
+import { motion } from "framer-motion";
 
 const Blog = () => {
   return (
-    <div className=" bg-white/10 p-5 rounded-md">
+    <motion.div
+      initial={{ opacity: 0, y: 0 }}
+      whileInView={{
+        opacity: 1,
+        y: -50,
+        transition: { duration: 0.8 },
+      }}
+      className=" bg-white/10 p-5 rounded-md"
+    >
       <div className="">
         <img src="/img/job-alert.webp" alt="job-alert" />
       </div>
@@ -25,7 +34,7 @@ const Blog = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aspernatur
         distinctio excepturi veritatis eum alias!...
       </p>
-    </div>
+    </motion.div>
   );
 };
 export default Blog;
