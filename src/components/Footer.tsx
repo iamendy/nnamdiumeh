@@ -8,18 +8,18 @@ const Footer = () => {
     <>
       <motion.section
         style={{ opacity: scrollYProgress }}
-        className=" bg-black px-[24px] lg:px-[48px] py-28"
+        className=" bg-black px-[24px] lg:px-[48px] py-28 xl:max-w-7xl xl:mx-auto"
       >
         <div className="lg:grid lg:grid-cols-2">
           <div className="flex flex-col">
             <div>
-              <h1 className="text-[56px] lg:text-[80px] font-semibold leading-[0.9em]">
+              <h1 className="text-[56px] lg:text-[80px] xl:text-[88px] font-semibold leading-[0.9em]">
                 Let’s
               </h1>
-              <h1 className="text-[56px] lg:text-[80px] font-semibold leading-[0.9em]">
+              <h1 className="text-[56px] lg:text-[80px] xl:text-[88px] font-semibold leading-[0.9em]">
                 work
               </h1>
-              <h1 className="text-[56px] lg:text-[80px] font-semibold leading-[0.9em]">
+              <h1 className="text-[56px] lg:text-[80px] xl:text-[88px] font-semibold leading-[0.9em]">
                 together
               </h1>
             </div>
@@ -45,7 +45,7 @@ const Footer = () => {
               <div className="flex justify-end ">
                 <a
                   href="#"
-                  className="lg:text-xl lg:-translate-x-10 hover:scale-[105%] p-1 transition-all inline-block"
+                  className="lg:text-xl lg:-translate-x-10 xl:text-2xl hover:scale-[105%] p-1 transition-all inline-block"
                 >
                   hey@nnamdiumeh.dev
                 </a>
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
 
           <div className="lg:h-full lg:pt-[6rem]">
-            <p className="text-center self-center lg:text-left lg:text-xl lg:w-[70%] lg:ml-auto">
+            <p className="text-center self-center lg:text-left lg:text-xl lg:w-[70%] xl:w-[65%] lg:ml-auto">
               I'm currently available for new work. Let me know if you're
               looking for a digital designer. Let’s talk about the next big
               thing!

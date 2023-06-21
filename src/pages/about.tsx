@@ -4,7 +4,7 @@ import { slideUp, opacity, hero, slideUpHero } from "@/lib/motion";
 const About = () => {
   return (
     <>
-      <section className="px-[24px] lg:px-[48px] flex flex-col space-y-9 lg: lg:space-y-16 pt-48 pb-28 lg:pt-[250px] lg:pb-[200px]">
+      <section className="px-[24px] lg:px-[48px] flex flex-col space-y-9 xl:max-w-7xl xl:mx-auto lg:space-y-16 pt-48 pb-28 lg:pt-[250px] lg:pb-[200px]">
         <div className="mb-[8rem]">
           {/* Mobile animation */}
           <motion.div
@@ -30,14 +30,14 @@ const About = () => {
             <motion.div
               variants={slideUpHero}
               custom={1}
-              className="lg:flex whitespace-pre"
+              className="lg:flex whitespace-pre xl:text-[88px]"
             >
               <h1 className="mr-5">Hello,</h1>{" "}
               <motion.h1 variants={opacity} custom={1}>
                 I am Nnamdi
               </motion.h1>
             </motion.div>
-            <motion.div className="flex">
+            <motion.div className="flex xl:text-[88px]">
               <motion.h1 variants={opacity} custom={2} className="mr-5">
                 a developer
               </motion.h1>{" "}
@@ -59,11 +59,11 @@ const About = () => {
               opacity: 1,
               transition: { delay: 0.2, duration: 0.4 },
             }}
-            className="text-[30px] lg:text-[38px] font-semibold leading-[1.4em] "
+            className="text-[30px] lg:text-[38px] xl:text-[48px] font-semibold leading-[1.4em] "
           >
             About
           </motion.h1>
-          <div className="space-y-9 lg:text-[20px]">
+          <div className="space-y-9 lg:text-[20px] xl:text-[24px]">
             <motion.p
               initial={{ y: 10, opacity: 0 }}
               whileInView={{
@@ -135,7 +135,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="px-[24px] flex flex-col space-y-9 py-20 lg:px-[48px] lg:grid lg:grid-cols-2 lg:space-y-0 lg:pb-[200px]">
+      <section className="px-[24px] flex flex-col space-y-9 py-20 lg:px-[48px] xl:max-w-7xl xl:mx-auto lg:grid lg:grid-cols-2 lg:space-y-0 lg:pb-[200px]">
         <motion.h3
           initial={{ opacity: 0 }}
           whileInView={{
@@ -158,11 +158,13 @@ const About = () => {
             viewport={{ once: true }}
             className="border-b border-b-white/10 py-8 lg:pt-0"
           >
-            <h3 className="text-[22px] lg:text-[28px] font-semibold mb-2">
+            <h3 className="text-[22px] lg:text-[28px] xl:text-[34px] font-semibold mb-2">
               Tunga
             </h3>
-            <p className="mb-4 lg:text-[20px]">Senior Frontend Developer</p>
-            <p className="text-white/50">2020 - Present</p>
+            <p className="mb-4 lg:text-[20px] xl:text-[24px]">
+              Senior Frontend Developer
+            </p>
+            <p className="text-white/50 xl:text-[20px]">2020 - Present</p>
           </motion.div>
 
           <motion.div
@@ -175,11 +177,13 @@ const About = () => {
             viewport={{ once: true }}
             className="border-b border-b-white/10 py-8"
           >
-            <h3 className="text-[22px] lg:text-[28px] font-semibold mb-2">
+            <h3 className="text-[22px] lg:text-[28px] xl:text-[34px] font-semibold mb-2">
               NCK Tech
             </h3>
-            <p className="mb-4 lg:text-[20px]">Frontend Developer</p>
-            <p className="text-white/50">2018 - 2019</p>
+            <p className="mb-4 lg:text-[20px] xl:text-[24px]">
+              Frontend Developer
+            </p>
+            <p className="text-white/50 xl:text-[20px]">2018 - 2019</p>
           </motion.div>
 
           <motion.div
@@ -192,11 +196,13 @@ const About = () => {
             viewport={{ once: true }}
             className="border-b border-b-white/10 py-8"
           >
-            <h3 className="text-[22px] lg:text-[28px] font-semibold mb-2">
+            <h3 className="text-[22px] lg:text-[28px] xl:text-[34px] font-semibold mb-2">
               The Lazy Print
             </h3>
-            <p className="mb-4 lg:text-[20px]">Fullstack developer</p>
-            <p className="text-white/50">2018</p>
+            <p className="mb-4 lg:text-[20px] xl:text-[24px]">
+              Fullstack developer
+            </p>
+            <p className="text-white/50 xl:text-[20px]">2018</p>
           </motion.div>
 
           <motion.div
@@ -209,11 +215,13 @@ const About = () => {
             viewport={{ once: true }}
             className="border-b border-b-white/10 py-8"
           >
-            <h3 className="text-[22px] lg:text-[28px] font-semibold mb-2">
+            <h3 className="text-[22px] lg:text-[28px] xl:text-[34px] font-semibold mb-2">
               Chenjo LTD
             </h3>
-            <p className="mb-4 lg:text-[20px]">Frontend Developer</p>
-            <p className="text-white/50">2017 - 2018</p>
+            <p className="mb-4 lg:text-[20px] xl:text-[24px]">
+              Frontend Developer
+            </p>
+            <p className="text-white/50 xl:text-[20px]">2017 - 2018</p>
           </motion.div>
         </div>
       </section>

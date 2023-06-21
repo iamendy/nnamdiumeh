@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="px-[24px] lg:px-[48px] flex flex-col space-y-9 lg: lg:space-y-16 pt-48 pb-28 lg:pt-[250px] lg:pb-[200px]">
+      <section className="px-[24px] lg:px-[48px] flex flex-col space-y-9 lg: lg:space-y-16 pt-48 pb-28 lg:pt-[250px] lg:pb-[200px] xl:max-w-7xl xl:mx-auto">
         {/* Desktop view animation */}
         <motion.div
           variants={hero}
@@ -140,7 +140,7 @@ export default function Home() {
 
       <section
         ref={containerRef}
-        className="my-[200px] flex flex-col flex-nowrap  items-center overflow-clip"
+        className="my-[200px] flex flex-col flex-nowrap  items-center overflow-clip "
       >
         <div className="w-[2000px] lg:w-[3000px] flex justify-start">
           <motion.p
@@ -162,13 +162,13 @@ export default function Home() {
         </motion.p> */}
       </section>
 
-      <section className=" bg-black px-[24px] lg:px-[48px] py-28">
+      <section className=" bg-black px-[24px] lg:px-[48px] py-28 xl:max-w-7xl xl:mx-auto">
         <motion.h3
           variants={opacity}
           initial="hidden"
           whileInView="visible"
           custom={1}
-          className="text-[32px] lg:text-[56px] text-white font-extrabold mb-24 lg:mb-[10rem]"
+          className="text-[32px] lg:text-[56px] xl:text-[68px] text-white font-extrabold mb-24 lg:mb-[10rem]"
         >
           Featured Work
         </motion.h3>
@@ -189,13 +189,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" bg-black px-[24px] lg:px-[48px] py-28">
+      <section className=" bg-black px-[24px] lg:px-[48px] py-28 xl:max-w-7xl xl:mx-auto">
         <motion.h3
           variants={opacity}
           initial="hidden"
           whileInView="visible"
           custom={1}
-          className="text-[32px] lg:text-[56px] text-white font-extrabold mb-24 lg:mb-[10rem]"
+          className="text-[32px] lg:text-[56px] xl:text-[68px] text-white font-extrabold mb-24 lg:mb-[10rem]"
         >
           Featured Blog
         </motion.h3>
