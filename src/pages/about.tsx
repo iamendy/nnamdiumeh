@@ -75,8 +75,8 @@ const About = () => {
               className="lg:leading-[1.6em]"
             >
               I have always been intrigued by how technology has the ability to
-              connect people and enhance our daily experiences. As a digital
-              designer, I recognize my duty to develop designs that are
+              connect people and enhance our daily experiences. As a web
+              developer, I recognize my duty to build products that are
               aesthetically pleasing, user-friendly, intuitive, and accessible
               to all.
             </motion.p>
@@ -91,10 +91,9 @@ const About = () => {
               viewport={{ once: true }}
             >
               In my professional experience, I have been fortunate to work on
-              diverse projects such as web and mobile app design, as well as
-              developing branding and marketing materials for several
-              organizations. I am highly motivated to explore new challenges and
-              strive to expand my knowledge and abilities.
+              diverse projects, as well as optimizing existing codebase for
+              several organizations. I am highly motivated to explore new
+              challenges and strive to expand my knowledge and abilities.
             </motion.p>
           </div>
         </div>

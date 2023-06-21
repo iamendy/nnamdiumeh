@@ -55,9 +55,8 @@ const Footer = () => {
 
           <div className="lg:h-full lg:pt-[6rem]">
             <p className="text-center self-center lg:text-left lg:text-xl lg:w-[70%] xl:w-[65%] lg:ml-auto">
-              I'm currently available for new work. Let me know if you're
-              looking for a digital designer. Let’s talk about the next big
-              thing!
+              Currently open to new opportunities. Need a seasoned web
+              developer? Let’s talk about your next big thing!
             </p>
           </div>
         </div>
