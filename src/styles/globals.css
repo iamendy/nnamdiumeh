@@ -6,9 +6,6 @@ body {
   @apply bg-black text-white;
 }
 
-/* .likes:hover {
-  animation-play-state: paused;
-} */
 .likes {
   animation: scrollText 15s infinite linear;
 }

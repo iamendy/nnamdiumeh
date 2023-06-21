@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const MobileMenu = () => {
   return (
-    <div className="hidden absolute w-full h-full bg-black/90 backdrop-blur-lg">
-      <div className="flex flex-col space-y-7 pt-16">
+    <div className="absolute w-full h-full bg-black/90 backdrop-blur-lg z-40">
+      <div className="flex flex-col space-y-7 pt-32">
         <Link
           href="#"
           className="text-white/10 text-7xl font-extrabold text-right pr-[28px]"
@@ -11,13 +11,13 @@ const MobileMenu = () => {
           About
         </Link>
         <Link
-          href="#"
+          href="/works"
           className="text-white/10 text-7xl font-extrabold text-right pr-[28px]"
         >
           Works
         </Link>
         <Link
-          href="#"
+          href=""
           className="text-white/90 text-7xl font-extrabold text-right pr-[28px]"
         >
           Blog

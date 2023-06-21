@@ -2,12 +2,14 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import BackArrow from "@/components/icons/BackArrow";
 import Arrow from "@/components/icons/Arrow";
+import { opacity } from "@/lib/motion";
+import { motion } from "framer-motion";
 
 const Index = () => {
   const router = useRouter();
 
   return (
-    <section className="px-[24px] lg:px-[48px] flex flex-col py-20 lg:pt-[150px] lg:pb-[200px]">
+    <section className="px-[24px] lg:px-[48px] flex flex-col pt-48 pb-28 lg:pt-[250px] lg:pb-[200px]">
       <Link href="/works">
         <div className="flex space-x-1 items-center">
           <BackArrow />
@@ -18,16 +20,32 @@ const Index = () => {
 
       <div className="lg:flex lg:justify-between">
         <div className="space-y-9 lg:space-y-16 mt-4 lg:w-[60%]">
-          <h1 className="text-[32px] font-semibold leading-[1.4em] lg:text-[56px]">
+          <motion.h1
+            initial={{ y: 10, opacity: 0 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: { delay: 0.1, duration: 0.4 },
+            }}
+            className="text-[32px] font-semibold leading-[1.4em] lg:text-[56px]"
+          >
             Job Query
-          </h1>
+          </motion.h1>
 
-          <p className="leading-[1.6em] lg:text-[20px]">
+          <motion.p
+            initial={{ y: 10, opacity: 0 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: { delay: 0.2, duration: 0.4 },
+            }}
+            className="leading-[1.6em] lg:text-[20px]"
+          >
             By providing job seekers with the ability to search, explore, and
             discover suitable job postings based on their individual preferences
             and criteria, the job portal app enables job seekers to take a more
             proactive and informed approach to their job search process.
-          </p>
+          </motion.p>
 
           <div className="space-x-3">
             <span className="leadng-0 p-2 rounded-lg border border-white/20">
