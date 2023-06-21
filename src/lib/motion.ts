@@ -54,3 +54,32 @@ export const opacity = {
     },
   }),
 };
+
+export const slideMenu = {
+  hidden: {
+    translateX: "-100%",
+
+    transition: {
+      duration: 0.2,
+    },
+  },
+  visible: {
+    translateX: "0%",
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.1,
+      stiffness: 100,
+    },
+  },
+};
+
+export const subMenu = {
+  hidden: {
+    opacity: 0,
+    y: 10,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};

@@ -73,6 +73,7 @@ const Footer = () => {
             whileInView="visible"
             custom={1}
             href="https://linkedin.com/in/iamendy"
+            target="_blank"
             className="flex items-center hover:animate-pulse"
           >
             <span>LinkedIn</span> &nbsp; <Arrow />
@@ -83,6 +84,7 @@ const Footer = () => {
             whileInView="visible"
             custom={1.5}
             href="https://twitter.com/nnamdipremium"
+            target="blank"
             className="flex items-center hover:animate-pulse"
           >
             <span>Twitter</span> &nbsp; <Arrow />
@@ -92,7 +94,8 @@ const Footer = () => {
             initial="hidden"
             whileInView="visible"
             custom={2}
-            href="#"
+            href="https://resume.io/r/nBWabjUEK"
+            target="_blank"
             className="flex items-center hover:animate-pulse"
           >
             <span>Resume</span> &nbsp; <Arrow />

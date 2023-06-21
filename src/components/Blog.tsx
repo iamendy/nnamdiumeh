@@ -7,10 +7,10 @@ const Blog = () => {
       initial={{ opacity: 0, y: 0 }}
       whileInView={{
         opacity: 1,
-        y: -50,
-        transition: { duration: 0.8 },
+        y: -20,
+        transition: { duration: 0.6 },
       }}
-      className=" bg-white/10 p-5 rounded-md cursor-pointer group transition-all"
+      className=" bg-white/10 p-5 rounded-md cursor-pointer group "
     >
       <div className="w-full overflow-hidden">
         <img
