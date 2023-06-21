@@ -34,7 +34,7 @@ const About = () => {
             >
               <h1 className="mr-5">Hello,</h1>{" "}
               <motion.h1 variants={opacity} custom={1}>
-                I am Nnamdi
+                I am Nnamdi,
               </motion.h1>
             </motion.div>
             <motion.div className="flex xl:text-[88px]">
@@ -110,7 +110,7 @@ const About = () => {
               <span>NextJs</span>
               <span>Nigerian Jollof</span>
               <span>Typescript</span>
-              <span>Docker</span>
+              <span>DevOps</span>
               <span>Solidity</span>
               <span>Reading</span>
               <span>TailwindCSS</span>
@@ -124,7 +124,7 @@ const About = () => {
               <span>NextJs</span>
               <span>Nigerian Jollof</span>
               <span>Typescript</span>
-              <span>Docker</span>
+              <span>DevOps</span>
               <span>Solidity</span>
               <span>Reading</span>
               <span>TailwindCSS</span>

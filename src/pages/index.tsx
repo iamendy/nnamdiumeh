@@ -1,4 +1,4 @@
-import { motion, useScroll, useMotionValue, useSpring } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Work from "@/components/Work";
 import Arrow from "@/components/icons/Arrow";
 import Blog from "@/components/Blog";
@@ -8,7 +8,21 @@ import { useRef } from "react";
 export default function Home() {
   const containerRef = useRef(null);
   const { scrollY } = useScroll();
-  const y = useSpring(scrollY, { stiffness: 100 });
+  //mobile
+  const topXMobile = useTransform(scrollY, [0, 500], [-200, 0], {
+    clamp: false,
+  });
+  const bottomXMobile = useTransform(scrollY, [0, 500], [450, 100], {
+    clamp: false,
+  });
+
+  //desktop
+  const topX = useTransform(scrollY, [0, 500], [-250, -150], {
+    clamp: false,
+  });
+  const bottomX = useTransform(scrollY, [0, 500], [450, 250], {
+    clamp: false,
+  });
 
   return (
     <>
@@ -142,24 +156,45 @@ export default function Home() {
         ref={containerRef}
         className="my-[200px] flex flex-col flex-nowrap  items-center overflow-clip "
       >
-        <div className="w-[2000px] lg:w-[3000px] flex justify-start">
+        <div className="w-full flex flex-nowrap justify-center ">
+          {/* Mobile View */}
           <motion.p
-            className="element translate-x-[-100px] text-[32px] leading-[1.4em] lg:text-[80px] font-semibold"
-            initial={{ translateX: "50%" }}
+            className="lg:hidden text-[32px] whitespace-nowrap leading-[1.4em] lg:text-[80px] font-semibold"
             style={{
-              translateX: scrollY,
+              translateX: topXMobile,
             }}
           >
-            Product Design • Digital Design • 3D Art • Digital Design • 3D Art•
+            Adaptive Design • Rest API • Agile
+          </motion.p>
+
+          {/* Desktop View */}
+          <motion.p
+            className="hidden lg:block text-[32px] whitespace-nowrap leading-[1.4em] lg:text-[80px] font-semibold"
+            style={{
+              translateX: topX,
+            }}
+          >
+            Adaptive Design • Rest API • Agile
           </motion.p>
         </div>
 
-        {/* <motion.p
-          style={{ x }}
-          className="transform text-[32px] leading-[1.4em] lg:text-[80px] font-semibold"
-        >
-          Illustration • No Code • Art Direction
-        </motion.p> */}
+        <div className="w-full flex flex-nowrap justify-center ">
+          {/* Desktop View */}
+          <motion.p
+            style={{ translateX: bottomX }}
+            className="hidden lg:block text-[32px] whitespace-nowrap leading-[1.4em] lg:text-[80px] font-semibold"
+          >
+            Responsive • User Experience • Fullstack
+          </motion.p>
+
+          {/* Mobile View */}
+          <motion.p
+            style={{ translateX: bottomXMobile }}
+            className="lg:hidden text-[32px] whitespace-nowrap leading-[1.4em] lg:text-[80px] font-semibold"
+          >
+            Responsive • User Experience • Fullstack
+          </motion.p>
+        </div>
       </section>
 
       <section className=" bg-black px-[24px] lg:px-[48px] py-28 xl:max-w-7xl xl:mx-auto">
