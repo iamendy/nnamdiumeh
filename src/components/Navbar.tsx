@@ -8,13 +8,23 @@ const Navbar = () => {
         Nnamdi Umeh
       </Link>
       <div className="hidden lg:flex space-x-8">
-        <Link href="/about" className="lg:text-lg">
+        <Link
+          href="/about"
+          className="lg:text-lg hover:animate-pulse active:font-bold active:animate-none"
+        >
           About
         </Link>
-        <Link href="/works" className="lg:text-lg">
+        <Link
+          href="/works"
+          className="lg:text-lg hover:animate-pulse active:animate-none"
+        >
           Work
         </Link>
-        <a href="#" target="_blank" className="lg:text-lg">
+        <a
+          href="#"
+          target="_blank"
+          className="lg:text-lg hover:animate-pulse active:animate-none"
+        >
           Resume
         </a>
       </div>

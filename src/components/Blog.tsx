@@ -10,10 +10,14 @@ const Blog = () => {
         y: -50,
         transition: { duration: 0.8 },
       }}
-      className=" bg-white/10 p-5 rounded-md"
+      className=" bg-white/10 p-5 rounded-md cursor-pointer group transition-all"
     >
-      <div className="">
-        <img src="/img/job-alert.webp" alt="job-alert" />
+      <div className="w-full overflow-hidden">
+        <img
+          src="/img/job-alert.webp"
+          alt="job-alert"
+          className="group-hover:scale-105 transition-all"
+        />
       </div>
 
       <div className={`flex flex-col justify-between my-3 space-y-2 lg`}>

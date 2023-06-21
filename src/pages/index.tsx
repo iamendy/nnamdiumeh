@@ -182,7 +182,7 @@ export default function Home() {
         <div className="flex items-center justify-center mt-9 lg:mt-24">
           <Link
             href="/works"
-            className="rounded-lg border border-white/20 p-3 flex items-center w-fit"
+            className="rounded-lg border border-white/20 p-3 flex items-center w-fit hover:border-white hover:text-white/90 active:text-white transition-colors"
           >
             <span>View Portfolio</span> &nbsp; <Arrow />
           </Link>
@@ -209,9 +209,13 @@ export default function Home() {
         </div>
 
         <div className="flex items-center justify-center mt-9">
-          <button className="rounded-lg border border-white/20 p-3 flex items-center w-fit">
+          <a
+            href="https://blog.nnamdiumeh.dev"
+            target="_blank"
+            className="rounded-lg border border-white/20 p-3 flex items-center w-fit hover:border-white hover:text-white/90 active:text-white transition-colors"
+          >
             <span>Visit Blog</span> &nbsp; <Arrow />
-          </button>
+          </a>
         </div>
       </section>
     </>

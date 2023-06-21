@@ -100,28 +100,33 @@ const About = () => {
         </div>
       </section>
 
-      <section className="px-[24px] lg:px-[48px] flex flex-col space-y-9 lg: lg:space-y-16 py-20 lg:pt-[150px] lg:pb-[200px]">
+      <section className="flex flex-col space-y-9 lg: lg:space-y-16 py-20 lg:pt-[150px] lg:pb-[200px]">
         <div className="relative h-24 w-full  flex justify-center items-center overflow-hidden z-10">
-          <div className="absolute lg:text-[20px] whitespace-nowrap flex top-0 left-0 w-full h-full justify-center items-center space-x-8 lg:space-x-24">
-            <div className="likes space-x-8 lg:space-x-24">
+          <div className="absolute lg:text-[26px] whitespace-nowrap flex top-0 left-0 w-full h-full justify-center items-center space-x-8 lg:space-x-28">
+            <div className="likes space-x-8 lg:space-x-28">
               <span>Arsenal FC</span>
               <span>ReactJs</span>
+              <span>Action Games</span>
               <span>NextJs</span>
               <span>Nigerian Jollof</span>
               <span>Typescript</span>
+              <span>Docker</span>
               <span>Solidity</span>
+              <span>Reading</span>
               <span>TailwindCSS</span>
               <span>Hiking</span>
               <span>NodeJs</span>
             </div>
-            <div className="likes space-x-8 lg:space-x-24">
+            <div className="likes space-x-8 lg:space-x-28">
               <span>Arsenal FC</span>
               <span>ReactJs</span>
+              <span>Action Games</span>
               <span>NextJs</span>
               <span>Nigerian Jollof</span>
               <span>Typescript</span>
-              <span>Web3</span>
+              <span>Docker</span>
               <span>Solidity</span>
+              <span>Reading</span>
               <span>TailwindCSS</span>
               <span>Hiking</span>
               <span>NodeJs</span>
@@ -153,8 +158,10 @@ const About = () => {
             viewport={{ once: true }}
             className="border-b border-b-white/10 py-8 lg:pt-0"
           >
-            <h3 className="text-[22px] font-semibold mb-2">Tunga</h3>
-            <p className="mb-4">Senior Frontend Developer</p>
+            <h3 className="text-[22px] lg:text-[28px] font-semibold mb-2">
+              Tunga
+            </h3>
+            <p className="mb-4 lg:text-[20px]">Senior Frontend Developer</p>
             <p className="text-white/50">2020 - Present</p>
           </motion.div>
 
@@ -168,8 +175,10 @@ const About = () => {
             viewport={{ once: true }}
             className="border-b border-b-white/10 py-8"
           >
-            <h3 className="text-[22px] font-semibold mb-2">NCK Tech</h3>
-            <p className="mb-4">Frontend Developer</p>
+            <h3 className="text-[22px] lg:text-[28px] font-semibold mb-2">
+              NCK Tech
+            </h3>
+            <p className="mb-4 lg:text-[20px]">Frontend Developer</p>
             <p className="text-white/50">2018 - 2019</p>
           </motion.div>
 
@@ -183,8 +192,10 @@ const About = () => {
             viewport={{ once: true }}
             className="border-b border-b-white/10 py-8"
           >
-            <h3 className="text-[22px] font-semibold mb-2">The Lazy Print</h3>
-            <p className="mb-4">Fullstack developer</p>
+            <h3 className="text-[22px] lg:text-[28px] font-semibold mb-2">
+              The Lazy Print
+            </h3>
+            <p className="mb-4 lg:text-[20px]">Fullstack developer</p>
             <p className="text-white/50">2018</p>
           </motion.div>
 
@@ -198,8 +209,10 @@ const About = () => {
             viewport={{ once: true }}
             className="border-b border-b-white/10 py-8"
           >
-            <h3 className="text-[22px] font-semibold mb-2">Chenjo LTD</h3>
-            <p className="mb-4">Frontend Developer</p>
+            <h3 className="text-[22px] lg:text-[28px] font-semibold mb-2">
+              Chenjo LTD
+            </h3>
+            <p className="mb-4 lg:text-[20px]">Frontend Developer</p>
             <p className="text-white/50">2017 - 2018</p>
           </motion.div>
         </div>

@@ -8,14 +8,20 @@ const Work = ({ alt = false }) => {
       initial={{ opacity: 0, y: 0 }}
       whileInView={{
         opacity: 1,
-        y: -50,
+        y: -20,
         transition: { duration: 0.8 },
       }}
-      className={`lg:w-[80%] lg:flex ${alt && "lg:ml-auto"}`}
+      className={`lg:w-[80%] lg:flex group ${alt && "lg:ml-auto"}`}
     >
-      <div className={`${alt && "order-2"}`}>
+      <div
+        className={`w-full transition-all overflow-hidden ${alt && "order-2"}`}
+      >
         <Link href="/works/job-description">
-          <img src="/img/job-alert.webp" alt="job-alert" />
+          <img
+            src="/img/job-alert.webp"
+            alt="job-alert"
+            className="group-hover:scale-105 transition-all"
+          />
         </Link>
       </div>
 
@@ -37,7 +43,7 @@ const Work = ({ alt = false }) => {
         </div>
 
         <p
-          className={`lg:mt-5 lg:w-[70%] lg:text-xl ${
+          className={`lg:mt-5 lg:w-[70%] lg:text-xl  ${
             alt && "lg:ml-auto lg:text-right"
           }`}
         >

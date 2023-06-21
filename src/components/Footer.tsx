@@ -1,6 +1,6 @@
 import Arrow from "./icons/Arrow";
 import { motion, useScroll } from "framer-motion";
-
+import { slideUp } from "@/lib/motion";
 const Footer = () => {
   const { scrollYProgress } = useScroll();
 
@@ -42,8 +42,11 @@ const Footer = () => {
                 </svg>
               </div>
 
-              <div className="flex justify-end">
-                <a href="#" className="lg:text-xl lg:-translate-x-10">
+              <div className="flex justify-end ">
+                <a
+                  href="#"
+                  className="lg:text-xl lg:-translate-x-10 hover:scale-[105%] p-1 transition-all inline-block"
+                >
                   hey@nnamdiumeh.dev
                 </a>
               </div>
@@ -60,23 +63,49 @@ const Footer = () => {
         </div>
       </motion.section>
 
-      <hr className="border-t border-t-white/20 w-[calc(100%-48px)] mx-auto mb-8 px-[24px] lg:px-[48px]" />
+      <hr className="border-t border-t-white/20 w-[calc(100%-48px)] mx-auto mb-8 lg:mb-5 px-[24px] lg:px-[48px]" />
 
       <footer className="flex flex-col justify-between px-[24px] lg:flex-row-reverse lg:items-center lg:px-[48px] py-5 lg:py-10 space-y-8 lg:space-y-0">
-        <div className="flex items-center justify-between lg:space-x-4">
-          <a href="#" className="flex items-center">
+        <div className="flex items-center justify-between lg:space-x-6">
+          <motion.a
+            variants={slideUp}
+            initial="hidden"
+            whileInView="visible"
+            custom={1}
+            href="https://linkedin.com/in/iamendy"
+            className="flex items-center hover:animate-pulse"
+          >
             <span>LinkedIn</span> &nbsp; <Arrow />
-          </a>
-          <a href="#" className="flex items-center">
+          </motion.a>
+          <motion.a
+            variants={slideUp}
+            initial="hidden"
+            whileInView="visible"
+            custom={1.5}
+            href="https://twitter.com/nnamdipremium"
+            className="flex items-center hover:animate-pulse"
+          >
             <span>Twitter</span> &nbsp; <Arrow />
-          </a>
-          <a href="#" className="flex items-center">
+          </motion.a>
+          <motion.a
+            variants={slideUp}
+            initial="hidden"
+            whileInView="visible"
+            custom={2}
+            href="#"
+            className="flex items-center hover:animate-pulse"
+          >
             <span>Resume</span> &nbsp; <Arrow />
-          </a>
+          </motion.a>
         </div>
-        <div className="text-center my-4 lg:my-0">
-          <span className=""> &copy; Nnamdi Umeh</span>
-        </div>
+        <motion.div
+          variants={slideUp}
+          initial="hidden"
+          whileInView="visible"
+          className="text-center my-4 lg:my-0"
+        >
+          <span className=""> &copy; Nnamdi Umeh ❤️</span>
+        </motion.div>
       </footer>
     </>
   );
