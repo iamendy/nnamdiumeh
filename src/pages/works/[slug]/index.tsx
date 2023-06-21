@@ -1,13 +1,9 @@
-import { useRouter } from "next/router";
 import Link from "next/link";
 import BackArrow from "@/components/icons/BackArrow";
 import Arrow from "@/components/icons/Arrow";
-import { opacity } from "@/lib/motion";
 import { motion } from "framer-motion";
 
 const Index = () => {
-  const router = useRouter();
-
   return (
     <section className="px-[24px] lg:px-[48px] xl:max-w-7xl xl:mx-auto flex flex-col pt-48 pb-28 lg:pt-[250px] lg:pb-[200px]">
       <Link href="/works" className="w-fit">

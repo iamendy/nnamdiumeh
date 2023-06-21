@@ -1,9 +1,20 @@
 import Clock from "./icons/Clock";
 import { motion } from "framer-motion";
+import getDate from "@/helpers/formatDate";
 
-const Blog = () => {
+interface Blog {
+  title: string;
+  brief: string;
+  slug: string;
+  coverImage: string;
+  dateAdded: string;
+}
+
+const Blog = ({ blog }: { blog: Blog }) => {
   return (
-    <motion.div
+    <motion.a
+      href={`https://blog.nnamdiumeh.dev/${blog.slug}`}
+      target="_blank"
       initial={{ opacity: 0, y: 0 }}
       whileInView={{
         opacity: 1,
@@ -15,31 +26,22 @@ const Blog = () => {
     >
       <div className="w-full overflow-hidden">
         <img
-          src="/img/job-alert.webp"
-          alt="job-alert"
+          src={blog.coverImage}
+          alt={blog.title}
           className="group-hover:scale-105 transition-all"
         />
       </div>
 
       <div className={`flex flex-col justify-between my-3 space-y-2 lg`}>
-        <h3 className="lg:text-lg">
-          Build and Deploy a Piggy Bank dApp on Celo
-        </h3>
+        <h3 className="lg:text-lg ">{blog.title}</h3>
 
         <div className="flex justify-between items-center w-full">
-          <p className="">12 March, 2023</p>
-          <p className="flex items-center space-x-1">
-            <Clock />
-            <span>6 mins</span>
-          </p>
+          <p className="">{getDate(blog.dateAdded)}</p>
         </div>
       </div>
 
-      <p className="">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aspernatur
-        distinctio excepturi veritatis eum alias!...
-      </p>
-    </motion.div>
+      <p className="">{blog.brief}</p>
+    </motion.a>
   );
 };
 export default Blog;

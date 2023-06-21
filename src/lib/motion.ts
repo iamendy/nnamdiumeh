@@ -13,6 +13,15 @@ export const hero = {
   },
 };
 
+export const fadeSlideUp = {
+  hidden: { y: 10, opacity: 0 },
+  visible: (custom: number) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.1, duration: 0.4 },
+  }),
+};
+
 export const slideUpHero = {
   hidden: {
     y: 20,
