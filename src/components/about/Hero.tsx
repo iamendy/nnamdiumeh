@@ -81,10 +81,9 @@ const Hero = () => {
             viewport={{ once: true }}
           >
             A dynamic entrepreneur who successfully established Premium
-            Interiors NG, an interior design company that has made a significant
-            impact in the industry. Over the span of two years, our company has
-            provided design solutions for more than five homes and delivered
-            top-quality furniture products.
+            Interiors NG, an interior design company that has provided design
+            solutions for more than five homes and delivered top-quality
+            furniture products.
           </motion.p>
 
           <motion.p
