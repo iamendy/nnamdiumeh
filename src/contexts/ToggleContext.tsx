@@ -1,6 +1,14 @@
-import { createContext, useState } from "react";
+import { createContext, useState, SetStateAction, Dispatch } from "react";
 
-export const toggleContext = createContext(null);
+interface ToggleContext {
+  toggle: boolean;
+  setToggle: Dispatch<SetStateAction<boolean>>;
+}
+
+export const toggleContext = createContext<ToggleContext>({
+  toggle: false,
+  setToggle: () => {},
+});
 
 export const ToggleContextProvider = ({
   children,

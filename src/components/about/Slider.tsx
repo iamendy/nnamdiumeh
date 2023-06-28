@@ -10,7 +10,6 @@ const Slider = () => {
             <span>NextJs</span>
             <span>Nigerian Jollof</span>
             <span>Typescript</span>
-            <span>DevOps</span>
             <span>Solidity</span>
             <span>Technical Writing</span>
             <span>TailwindCSS</span>
@@ -24,7 +23,6 @@ const Slider = () => {
             <span>NextJs</span>
             <span>Nigerian Jollof</span>
             <span>Typescript</span>
-            <span>DevOps</span>
             <span>Solidity</span>
             <span>Technical Writing</span>
             <span>TailwindCSS</span>

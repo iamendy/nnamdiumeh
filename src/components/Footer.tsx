@@ -55,7 +55,7 @@ const Footer = () => {
 
           <div className="lg:h-full lg:pt-[6rem]">
             <p className="text-center self-center lg:text-left lg:text-xl lg:w-[70%] xl:w-[65%] lg:ml-auto">
-              Currently open to new opportunities. Need a seasoned web
+              Currently open to new opportunities. Need a skilled frontend
               developer? Let’s talk about your next big thing!
             </p>
           </div>
@@ -71,7 +71,7 @@ const Footer = () => {
             initial="hidden"
             whileInView="visible"
             custom={1}
-            href="https://linkedin.com/in/iamendy"
+            href="https://linkedin.com/in/ohthatendy"
             target="_blank"
             className="flex items-center hover:animate-pulse"
           >
@@ -93,7 +93,7 @@ const Footer = () => {
             initial="hidden"
             whileInView="visible"
             custom={2}
-            href="https://resume.io/r/nBWabjUEK"
+            href="/CV_NnamdiUmeh.pdf"
             target="_blank"
             className="flex items-center hover:animate-pulse"
           >

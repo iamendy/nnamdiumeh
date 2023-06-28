@@ -21,7 +21,7 @@ const Navbar = () => {
           Work
         </Link>
         <a
-          href="#"
+          href="/CV_NnamdiUmeh.pdf"
           target="_blank"
           className="lg:text-lg hover:animate-pulse active:animate-none"
         >

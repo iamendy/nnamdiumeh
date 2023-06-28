@@ -20,7 +20,7 @@ const Work = ({ alt = false }) => {
           <img
             src="/img/job-alert.webp"
             alt="job-alert"
-            className="group-hover:scale-105 transition-all"
+            className="group-hover:scale-105 transition-all rounded-md"
           />
         </Link>
       </div>

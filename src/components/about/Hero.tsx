@@ -57,7 +57,7 @@ const Hero = () => {
           custom={2}
           className="text-[30px] lg:text-[38px] xl:text-[48px] font-semibold leading-[1.4em] "
         >
-          About
+          About me
         </motion.h1>
         <div className="space-y-9 lg:text-[20px] xl:text-[24px]">
           <motion.p
@@ -68,11 +68,9 @@ const Hero = () => {
             viewport={{ once: true }}
             className="lg:leading-[1.6em]"
           >
-            I have always been intrigued by how technology has the ability to
-            connect people and enhance our daily experiences. As a web
-            developer, I recognize my duty to build products that are
-            aesthetically pleasing, user-friendly, intuitive, and accessible to
-            all.
+            An exceptionally creative and visionary individual with a solid
+            foundation in Javascript web development, strategic planning, and
+            technical writing.
           </motion.p>
 
           <motion.p
@@ -82,10 +80,23 @@ const Hero = () => {
             custom={2}
             viewport={{ once: true }}
           >
-            In my professional experience, I have been fortunate to work on
-            diverse projects, as well as optimizing existing codebase for
-            several organizations. I am highly motivated to explore new
-            challenges and strive to expand my knowledge and abilities.
+            A dynamic entrepreneur who successfully established Premium
+            Interiors NG, an interior design company that has made a significant
+            impact in the industry. Over the span of two years, our company has
+            provided design solutions for more than five homes and delivered
+            top-quality furniture products.
+          </motion.p>
+
+          <motion.p
+            variants={fadeSlideUp}
+            initial="hidden"
+            whileInView="visible"
+            custom={2}
+            viewport={{ once: true }}
+          >
+            In addition to my professional work, I have a strong passion for
+            writing. I am highly motivated to embark on new challenges and
+            constantly seek opportunities to expand my knowledge and skills.
           </motion.p>
         </div>
       </div>

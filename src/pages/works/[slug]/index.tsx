@@ -55,7 +55,10 @@ const Index = () => {
             </span>
           </div>
 
-          <Link href="#" className="flex items-baseline">
+          <Link
+            href="#"
+            className="flex items-baseline w-fit hover:scale-[105%] transition-all"
+          >
             <span className="underline tracking-wide xl:text-[24px]">
               Live Link
             </span>{" "}

@@ -47,7 +47,7 @@ const Slides = () => {
           style={{ translateX: bottomX }}
           className="hidden lg:block text-[32px] whitespace-nowrap leading-[1.4em] lg:text-[80px] font-semibold"
         >
-          Responsive • User Experience • Fullstack
+          Responsive • Scalable • User Experience
         </motion.p>
 
         {/* Mobile View */}
@@ -55,7 +55,7 @@ const Slides = () => {
           style={{ translateX: bottomXMobile }}
           className="lg:hidden text-[32px] whitespace-nowrap leading-[1.4em] lg:text-[80px] font-semibold"
         >
-          Responsive • User Experience • Fullstack
+          Responsive • Scalable • User Experience
         </motion.p>
       </div>
     </section>

@@ -19,7 +19,7 @@ const Blogs = () => {
 
       <div className="flex flex-col space-y-20 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
         {blogs.map((blog) => (
-          <Blog blog={blog} />
+          <Blog key={blog.dateAdded} blog={blog} />
         ))}
       </div>
 

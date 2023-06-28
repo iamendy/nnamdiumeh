@@ -27,7 +27,7 @@ const Experience = () => {
             Tunga
           </h3>
           <p className="mb-4 lg:text-[20px] xl:text-[24px]">
-            Senior Frontend Developer
+            Frontend Developer
           </p>
           <p className="text-white/50 xl:text-[20px]">2020 - Present</p>
         </motion.div>
@@ -46,24 +46,7 @@ const Experience = () => {
           <p className="mb-4 lg:text-[20px] xl:text-[24px]">
             Frontend Developer
           </p>
-          <p className="text-white/50 xl:text-[20px]">2018 - 2019</p>
-        </motion.div>
-
-        <motion.div
-          variants={fadeSlideUp}
-          initial="hidden"
-          whileInView="visible"
-          custom={3}
-          viewport={{ once: true }}
-          className="border-b border-b-white/10 py-8"
-        >
-          <h3 className="text-[22px] lg:text-[28px] xl:text-[34px] font-semibold mb-2">
-            The Lazy Print
-          </h3>
-          <p className="mb-4 lg:text-[20px] xl:text-[24px]">
-            Fullstack developer
-          </p>
-          <p className="text-white/50 xl:text-[20px]">2018</p>
+          <p className="text-white/50 xl:text-[20px]">2019 - 2020</p>
         </motion.div>
 
         <motion.div
@@ -80,7 +63,7 @@ const Experience = () => {
           <p className="mb-4 lg:text-[20px] xl:text-[24px]">
             Frontend Developer
           </p>
-          <p className="text-white/50 xl:text-[20px]">2017 - 2018</p>
+          <p className="text-white/50 xl:text-[20px]">2018 - 2019</p>
         </motion.div>
       </div>
     </section>

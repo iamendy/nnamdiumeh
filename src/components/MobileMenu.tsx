@@ -72,7 +72,7 @@ const MobileMenu = () => {
         </motion.a>
         <motion.a
           variants={subMenu}
-          href="https://resume.io/r/nBWabjUEK"
+          href="/CV_NnamdiUmeh.pdf"
           target="blank"
           className="flex items-center hover:animate-pulse"
         >
