@@ -35,12 +35,12 @@ const Navbar = () => {
         >
           About
         </Link>
-        <Link
+        {/* <Link
           href="/works"
           className="lg:text-lg hover:animate-pulse active:animate-none"
         >
           Work
-        </Link>
+        </Link> */}
         <a
           href="/CV_NnamdiUmeh.pdf"
           target="_blank"

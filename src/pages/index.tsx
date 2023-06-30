@@ -58,14 +58,15 @@ export default function Home() {
               custom={2}
               viewport={{ once: true }}
             >
-              Passionate about web development. I enjoy contributing to projects
-              that makes a difference and helping others create success.
+              Passionate about web3 development. I enjoy contributing to
+              projects that makes a difference and helping others create
+              success.
             </motion.p>
           </div>
         </div>
       </section>
 
-      <Works />
+      {/* <Works /> */}
 
       <Blogs />
     </>
