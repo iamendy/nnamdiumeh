@@ -15,7 +15,7 @@ const Works = () => {
         custom={1}
         className="text-[32px] lg:text-[56px] xl:text-[68px] text-white font-extrabold mb-24 lg:mb-[10rem]"
       >
-        Featured Work 🚧🔺
+        Featured Work
       </motion.h3>
 
       <div className="flex flex-col space-y-20 lg:space-y-[10rem] ">
