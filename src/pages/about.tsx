@@ -1,6 +1,4 @@
-import Hero from "@/components/about/Hero";
-import Slider from "@/components/about/Slider";
-import Experience from "@/components/about/Experience";
+import { Hero, Experience, Slider } from "@/components/about";
 
 const About = () => {
   return (

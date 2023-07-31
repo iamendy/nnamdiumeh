@@ -1,10 +1,7 @@
-import Blogs from "@/components/home/Blogs";
-import Works from "@/components/home/Works";
-import Slides from "@/components/home/Slides";
-import Hero from "@/components/home/Hero";
+import { Hero, Slides, Blogs } from "@/components/home";
 import { motion } from "framer-motion";
-
 import { fadeSlideUp } from "@/lib/motion";
+
 export default function Home() {
   return (
     <>
