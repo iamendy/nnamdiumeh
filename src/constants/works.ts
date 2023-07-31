@@ -22,7 +22,7 @@ export const works: Work[] = [
       },
     ],
     client: "OSCAFest X Axelar",
-    role: "Dapp developer",
+    role: "Hacker",
     year: "2023",
   },
 ];

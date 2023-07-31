@@ -1,4 +1,3 @@
-import Clock from "./icons/Clock";
 import { motion } from "framer-motion";
 import getDate from "@/helpers/formatDate";
 

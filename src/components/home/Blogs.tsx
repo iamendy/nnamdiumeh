@@ -2,7 +2,7 @@ import Blog from "@/components/Blog";
 import { motion } from "framer-motion";
 import { opacity } from "@/lib/motion";
 import Arrow from "../icons/Arrow";
-import blogs from "@/constants";
+import blogs from "@/constants/blogs";
 
 const Blogs = () => {
   return (
