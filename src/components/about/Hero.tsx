@@ -3,7 +3,7 @@ import { opacity, hero, slideUpHero, fadeSlideUp } from "@/lib/motion";
 
 const Hero = () => {
   return (
-    <section className="px-[24px] lg:px-[48px] flex flex-col space-y-9 xl:max-w-7xl xl:mx-auto lg:space-y-16 pt-48 pb-28 lg:pt-[250px] lg:pb-[200px]">
+    <section className="px-[24px] lg:px-[48px] flex flex-col space-y-9 xl:max-w-7xl xl:mx-auto lg:space-y-16 pt-32 pb-28 lg:pt-[250px] lg:pb-[200px]">
       <div className="mb-[8rem]">
         {/* Mobile animation */}
         <motion.div

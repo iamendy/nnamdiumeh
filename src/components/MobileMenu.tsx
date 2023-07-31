@@ -41,7 +41,7 @@ const MobileMenu = () => {
           About
         </MotionLink>
 
-        {/* <MotionLink
+        <MotionLink
           variants={subMenu}
           href="/works"
           className={`${
@@ -50,7 +50,7 @@ const MobileMenu = () => {
           onClick={() => setToggle(!toggle)}
         >
           Work
-        </MotionLink> */}
+        </MotionLink>
       </div>
 
       <div className="px-[24px] py-7 flex items-center justify-between lg:space-x-6">
