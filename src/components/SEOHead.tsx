@@ -24,14 +24,14 @@ function SEOHead({
         property="og:description"
         content="A software engineer with over 4 years experience. I love to craft scalable products that help 10x your business growth."
       />
-      <meta property="og:image" content={`${href}/banner.png`} />
+      <meta property="og:image" content={`${href}/img/banner.png`} />
       <meta property="og:url" content={href} />
       <meta property="og:type" content="website" />
       <meta
         name="twitter:card"
         content="A software engineer with over 4 years experience. I love to craft scalable products that help 10x your business growth."
       />
-      <meta name="twitter:title" content="title!" />
+      <meta name="twitter:title" content="Nnamdi Umeh" />
       <meta
         name="twitter:description"
         content="A software engineer with over 4 years experience. I love to craft scalable products that help 10x your business growth."
