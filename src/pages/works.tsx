@@ -1,4 +1,5 @@
 import Work from "@/components/Work";
+import works from "@/constants/works";
 
 const Works = () => {
   return (
@@ -9,11 +10,9 @@ const Works = () => {
       </h1>
 
       <div className="space-y-20 lg:space-y-[9rem]">
-        <Work />
-
-        <Work alt />
-
-        <Work />
+        {works.map((work, i) => (
+          <Work work={work} key={i} />
+        ))}
       </div>
     </section>
   );

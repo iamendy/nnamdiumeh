@@ -2,8 +2,13 @@ import Link from "next/link";
 import BackArrow from "@/components/icons/BackArrow";
 import Arrow from "@/components/icons/Arrow";
 import { motion } from "framer-motion";
+import works from "../../../constants/works";
+import { useRouter } from "next/router";
 
 const Index = () => {
+  const router = useRouter();
+  const work = works?.filter((d) => d.title == router?.query?.slug)[0];
+
   return (
     <section className="px-[24px] lg:px-[48px] xl:max-w-7xl xl:mx-auto flex flex-col pt-48 pb-28 lg:pt-[250px] lg:pb-[200px]">
       <Link href="/works" className="w-fit">
@@ -15,7 +20,7 @@ const Index = () => {
       </Link>
 
       <div className="lg:flex lg:justify-between">
-        <div className="space-y-9 lg:space-y-16 mt-4 lg:w-[60%]">
+        <div className="flex flex-col gap-y-12 lg:gap-y-16 mt-4 lg:w-[60%] overflow-hidden">
           <motion.h1
             initial={{ y: 10, opacity: 0 }}
             animate={{
@@ -25,67 +30,71 @@ const Index = () => {
             }}
             className="text-[32px] xl:text-[72px] font-semibold leading-[1.4em] lg:text-[56px]"
           >
-            Job Query
+            {work?.title}
           </motion.h1>
 
-          <motion.p
-            initial={{ y: 10, opacity: 0 }}
-            animate={{
-              y: 0,
-              opacity: 1,
-              transition: { delay: 0.2, duration: 0.4 },
-            }}
-            className="leading-[1.6em] lg:text-[20px] xl:text-[24px]"
-          >
-            By providing job seekers with the ability to search, explore, and
-            discover suitable job postings based on their individual preferences
-            and criteria, the job portal app enables job seekers to take a more
-            proactive and informed approach to their job search process.
-          </motion.p>
-
-          <div className="space-x-3">
-            <span className="leadng-0 p-2 rounded-lg border border-white/20">
-              typescript
-            </span>
-            <span className="leadng-0 p-2 rounded-lg border border-white/20">
-              nodeJs
-            </span>
-            <span className="leadng-0 p-2 rounded-lg border border-white/20">
-              TailwindCSS
-            </span>
+          <div className="flex flex-col gap-y-6">
+            {work?.description.map((d, i) => (
+              <motion.p
+                initial={{ y: 10, opacity: 0 }}
+                animate={{
+                  y: 0,
+                  opacity: 1,
+                  transition: { delay: 0.2, duration: 0.4 },
+                }}
+                className="leading-[1.6em] lg:text-[20px] xl:text-[24px]"
+              >
+                {d}
+              </motion.p>
+            ))}
           </div>
 
-          <Link
-            href="#"
-            className="flex items-baseline w-fit hover:scale-[105%] transition-all"
-          >
-            <span className="underline tracking-wide xl:text-[24px]">
-              Live Link
-            </span>{" "}
-            &nbsp; <Arrow />
-          </Link>
+          <div className="space-x-3">
+            {work?.tags.map((d, i) => (
+              <span
+                key={i}
+                className="leadng-0 p-2 rounded-lg border border-white/20"
+              >
+                {d}
+              </span>
+            ))}
+          </div>
+
+          <div className="flex gap-x-3 mb-4">
+            {work?.links.map((d, i) => (
+              <Link
+                href={d.link}
+                className="flex items-baseline w-fit hover:scale-[105%] transition-all"
+              >
+                <span className="underline tracking-wide xl:text-[24px]">
+                  {d.name}
+                </span>{" "}
+                &nbsp; <Arrow />
+              </Link>
+            ))}
+          </div>
         </div>
 
         <div className="flex justify-between items-center mt-9 lg:flex-col lg:items-start lg:justify-center lg:space-y-14 lg:w-[30%] lg:mt-0">
           <div className="flex flex-col">
             <h4 className="xl:text-[18px]">Client</h4>
-            <b className="lg:text-18px xl:text-[20px]">AirBnB</b>
+            <b className="lg:text-18px xl:text-[20px]">{work?.client}</b>
           </div>
 
           <div className="flex flex-col">
             <h4 className="xl:text-[18px]">Role</h4>
-            <b className="lg:text-18px xl:text-[20px]">Frontend Dev.</b>
+            <b className="lg:text-18px xl:text-[20px]">{work?.role}</b>
           </div>
 
           <div className="flex flex-col">
             <h4 className="xl:text-[18px]">Year</h4>
-            <b className="lg:text-18px xl:text-[20px]">2023</b>
+            <b className="lg:text-18px xl:text-[20px]">{work?.year}</b>
           </div>
         </div>
       </div>
 
       <div className="mt-16 lg:w-[60%] rounded-md overflow-hidden">
-        <img src="/img/job-alert.webp" alt="Job alert" />
+        <img src={work?.thumbnail} alt={work?.title} />
       </div>
     </section>
   );

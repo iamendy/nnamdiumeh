@@ -10,6 +10,20 @@ body {
   animation: scrollText 15s infinite linear;
 }
 
+.active {
+  position: relative;
+}
+
+.active::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  height: 1px;
+  width: 100%;
+  @apply bg-white;
+}
+
 @keyframes scrollText {
   from {
     transform: translateX(0%);

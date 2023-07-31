@@ -1,9 +1,11 @@
 import Menu from "./icons/Menu";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const MotionLink = motion(Link);
+  const router = useRouter();
 
   return (
     <nav className="flex items-center justify-between px-[24px] lg:px-[48px] h-20 lg:h-28 fixed w-full bg-black/95 z-50 backdrop-blur-md">
@@ -31,16 +33,20 @@ const Navbar = () => {
       >
         <Link
           href="/about"
-          className="lg:text-lg hover:animate-pulse active:font-bold active:animate-none"
+          className={`${
+            router.asPath == "/about" && "active"
+          } lg:text-lg hover:animate-pulse active:font-bold active:animate-none`}
         >
           About
         </Link>
-        {/* <Link
+        <Link
           href="/works"
-          className="lg:text-lg hover:animate-pulse active:animate-none"
+          className={`${
+            router.asPath == "/works" && "active"
+          } lg:text-lg hover:animate-pulse active:font-bold active:animate-none`}
         >
-          Work
-        </Link> */}
+          Works
+        </Link>
         <a
           href="/CV_NnamdiUmeh.pdf"
           target="_blank"

@@ -11,6 +11,7 @@ import nest from "../../public/img/logos/nest.svg";
 import react from "../../public/img/logos/react.svg";
 import sass from "../../public/img/logos/sass.svg";
 import Image from "next/image";
+import { Works } from "@/components/home";
 
 export default function Home() {
   return (
@@ -119,7 +120,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <Works /> */}
+      <Works />
 
       <Blogs />
     </>

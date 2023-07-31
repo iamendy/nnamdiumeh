@@ -3,6 +3,7 @@ import { opacity } from "@/lib/motion";
 import Work from "../Work";
 import Link from "next/link";
 import Arrow from "../icons/Arrow";
+import works from "../../constants/works";
 
 const Works = () => {
   return (
@@ -18,9 +19,9 @@ const Works = () => {
       </motion.h3>
 
       <div className="flex flex-col space-y-20 lg:space-y-[10rem] ">
-        <Work />
-
-        <Work alt />
+        {works.map((work, i) => (
+          <Work work={work} key={i} />
+        ))}
       </div>
 
       <div className="flex items-center justify-center mt-9 lg:mt-24">
