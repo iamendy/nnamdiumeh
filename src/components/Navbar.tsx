@@ -15,7 +15,7 @@ const Navbar = () => {
       <Link href="/" className="lg:text-lg inline-block">
         <motion.span
           className="inline-block"
-          onClick={() => setToggle(!toggle)}
+          onClick={() => setToggle(false)}
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,

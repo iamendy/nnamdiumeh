@@ -10,6 +10,9 @@ import next from "../../public/img/logos/next.svg";
 import nest from "../../public/img/logos/nest.svg";
 import react from "../../public/img/logos/react.svg";
 import sass from "../../public/img/logos/sass.svg";
+import hardhat from "../../public/img/logos/hardhat.svg";
+import truffle from "../../public/img/logos/truffle.svg";
+import ethers from "../../public/img/logos/ethers.svg";
 import Image from "next/image";
 import { Works } from "@/components/home";
 
@@ -35,46 +38,108 @@ export default function Home() {
 
         <div className="flex flex-col gap-y-9 lg:space-y-0 lg:grid lg:grid-cols-2">
           <div className="flex flex-col gap-y-9 lg:text-[20px] xl:text-[24px] lg:pt-3">
-            <div className="flex flex-col gap-y-4 lg:gap-y-12">
+            <div className="flex flex-col gap-y-6 lg:gap-y-12">
               <div className="flex space-x-6 ">
                 <div className="w-12 h-12 flex items-center justify-center lg:w-16 lg:h-13">
-                  <Image src={js} alt="Javascript" />
+                  <Image
+                    src={js}
+                    alt="Javascript"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
 
                 <div className="w-12 h-12 flex items-center justify-center lg:w-16 lg:h-13">
-                  <Image src={ts} alt="Typescript" />
+                  <Image
+                    src={ts}
+                    alt="Typescript"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
 
               <div className="flex space-x-6 ">
                 <div className="w-12 h-12 flex items-center justify-center lg:w-16 lg:h-13">
-                  <Image src={react} alt="React" />
+                  <Image
+                    src={react}
+                    alt="React"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
 
                 <div className="w-12 h-12 flex items-center justify-center lg:w-16 lg:h-13">
-                  <Image src={next} alt="Next Js" />
+                  <Image
+                    src={next}
+                    alt="Next Js"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
 
                 <div className="w-12 h-12 flex items-center justify-center lg:w-16 lg:h-13">
-                  <Image src={nest} alt="Nest Js" />
+                  <Image
+                    src={nest}
+                    alt="Nest Js"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
 
               <div className="flex space-x-6 ">
                 <div className="w-12 h-12 flex items-center justify-center lg:w-16 lg:h-13">
-                  <Image src={css} alt="CSS" />
+                  <Image
+                    src={css}
+                    alt="CSS"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
 
                 <div className="w-12 h-12 flex items-center justify-center lg:w-16 lg:h-13">
-                  <Image src={tailwind} alt="Tailwind CSS" />
+                  <Image
+                    src={tailwind}
+                    alt="Tailwind CSS"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
 
                 <div className="w-12 h-12 flex items-center justify-center lg:w-16 lg:h-13">
-                  <Image src={bootstrap} alt="Bootstrap" />
+                  <Image
+                    src={bootstrap}
+                    alt="Bootstrap"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
 
                 <div className="w-12 h-12 flex items-center justify-center lg:w-16 lg:h-13">
-                  <Image src={sass} alt="Sass" />
+                  <Image
+                    src={sass}
+                    alt="Sass"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+
+              <div className="flex space-x-6 ">
+                <div className="w-12 h-12 flex items-center justify-center lg:w-16 lg:h-13">
+                  <Image
+                    src={truffle}
+                    alt="Javascript"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+
+                <div className="w-12 h-12 flex items-center justify-center lg:w-16 lg:h-13">
+                  <Image
+                    src={hardhat}
+                    alt="Typescript"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+
+                <div className="w-12 h-12 flex items-center justify-center lg:w-16 lg:h-13">
+                  <Image
+                    src={ethers}
+                    alt="Ethers"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
             </div>
