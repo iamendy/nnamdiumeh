@@ -1,11 +1,16 @@
 import Arrow from "@/components/icons/Arrow";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import suve from "../../public/img/suve.jpg";
 import Image from "next/image";
 import { Work } from "../constants/interface/work.interface";
 
-const Work = ({ work, alt = false }: { work: Work; alt?: boolean }) => {
+const Work = ({
+  work,
+  alt = false,
+}: {
+  work: Work;
+  alt?: boolean | undefined;
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 0 }}
@@ -21,15 +26,16 @@ const Work = ({ work, alt = false }: { work: Work; alt?: boolean }) => {
       <div
         className={`w-full transition-all overflow-hidden ${
           alt && "order-2"
-        } lg:w-[60%] lg:h-[300px]`}
+        } w-full lg:w-[500px] h-[250px] lg:h-[300px]`}
       >
         <Link href={`/works/${work?.title}`}>
-          <div className="lg:w-[100%]">
-            <div>
+          <div className="lg:w-[100%] relative h-full">
+            <div className="w-full h-full">
               <Image
-                src={suve}
-                alt="job-alert"
-                className="group-hover:scale-105 transition-all rounded-md w-full h-full"
+                src={work?.thumbnail}
+                fill={true}
+                alt={work?.title}
+                className="group-hover:scale-105 transition-all rounded-md object-contain"
               />
             </div>
           </div>
@@ -38,15 +44,14 @@ const Work = ({ work, alt = false }: { work: Work; alt?: boolean }) => {
 
       <Link
         href={`/works/${work?.title}`}
-        target="_blank"
-        className={`lg:order-1 ${alt ? "mr-5" : "lg:ml-5"}`}
+        className={`lg:order-1 ${alt ? "mr-5" : "lg:ml-5"} w-full`}
       >
         <div
-          className={`flex justify-between my-3 lg:my-0 lg:space-y-2 lg:flex-col ${
+          className={`flex justify-between my-3 lg:my-0 lg:space-y-2 lg:flex-col flex-1 ${
             alt && "items-end"
           }`}
         >
-          <h3 className="lg:text-3xl flex items-center ">
+          <h3 className="lg:text-3xl flex items-center">
             {work?.title} &nbsp; <Arrow />
           </h3>
           <div className="flex gap-x-3 items-center ">
@@ -63,7 +68,7 @@ const Work = ({ work, alt = false }: { work: Work; alt?: boolean }) => {
 
         <p
           className={`lg:mt-5 lg:w-[70%] xl:w-[50%] lg:text-xl  ${
-            alt && "lg:ml-auto lg:text-right"
+            alt && "lg:ml-auto lg:text-right "
           }`}
         >
           {work?.description[0]}
