@@ -4,9 +4,9 @@ export const works: Work[] = [
   {
     title: "SUVe",
     description: [
-      "SUVe is the winning dApp solution for the Open Source Africa Fest 2023 Hackathon in partnership with <a href='https://axelar.network.dev'>Axelar<a/>. It is a multichain verification system that utilizes blockchain technology to verify authenticity of Vaccines.",
+      "SUVe is the winning dApp solution for the Open Source Africa Fest 2023 Hackathon in partnership with Axelar. It is a multichain verification system that utilizes blockchain technology to verify authenticity of Vaccines.",
       "Over 10,000 people die daily from complications due to counterfeit vaccines. SUVe helps verify vaccines, across any blockchain.",
-      "Suve works by implementing a 2-way General Message Passing to enable communication between Enrollment Service on the source blockchain and Verifification service on other blockchains, to verify the autheticity of vaccines.",
+      "Suve works by implementing a 2-way General Message Passing to enable communication between Enrollment Service on the source blockchain and Verification service on other blockchains, to verify the autheticity of vaccines.",
     ],
     ext: {
       text: "View Announcement Tweet",
@@ -31,7 +31,7 @@ export const works: Work[] = [
   {
     title: "TipX",
     description: [
-      "TipX is one of the winning dApp solution for the Web3Africa 2023 Hackathon in partnership with <a href='https://bunzz.dev'>Bunzz<a/>. With GoTipMe, you can receive tips from your audience directly and securely, using the power of blockchain technology.",
+      "TipX is one of the winning dApp solution for the Web3Africa 2023 Hackathon in partnership with Bunzz. With GoTipMe, you can receive tips from your audience directly and securely, using the power of blockchain technology.",
     ],
     ext: {
       text: "View Announcement Tweet",

@@ -69,7 +69,7 @@ export const slideMenu = {
     translateX: "-100%",
 
     transition: {
-      duration: 0.2,
+      duration: 0.3,
     },
   },
   visible: {

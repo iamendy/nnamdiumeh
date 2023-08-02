@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Arrow from "./icons/Arrow";
 import { useContext } from "react";
 import toggleContext from "@/contexts/ToggleContext";
@@ -18,6 +18,7 @@ const MobileMenu = () => {
       animate={toggle ? "visible" : "hidden"}
       className="fixed w-full top-0 left-0 flex flex-col justify-between h-full bg-black backdrop-blur-lg z-40"
     >
+      {/* Top part */}
       <div className="flex flex-col space-y-7 pt-32 pr-[28px]">
         <MotionLink
           variants={subMenu}
@@ -63,6 +64,7 @@ const MobileMenu = () => {
         </MotionLink>
       </div>
 
+      {/* Bottom part */}
       <div className="px-[24px] py-7 flex items-center justify-between lg:space-x-6">
         <motion.a
           variants={subMenu}
