@@ -51,6 +51,16 @@ const MobileMenu = () => {
         >
           Work
         </MotionLink>
+
+        <MotionLink
+          variants={subMenu}
+          href="https://blog.nnamdiumeh.dev"
+          target="_blank"
+          className="text-7xl font-extrabold text-right tracking-tight text-white/60"
+          onClick={() => setToggle(!toggle)}
+        >
+          Blog
+        </MotionLink>
       </div>
 
       <div className="px-[24px] py-7 flex items-center justify-between lg:space-x-6">

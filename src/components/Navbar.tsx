@@ -43,6 +43,13 @@ const Navbar = () => {
         >
           About
         </Link>
+        <a
+          href="https://blog.nnamdiumeh.dev"
+          target="_blank"
+          className="lg:text-lg hover:animate-pulse active:animate-none"
+        >
+          Blog
+        </a>
         <Link
           href="/works"
           className={`${
@@ -51,6 +58,7 @@ const Navbar = () => {
         >
           Works
         </Link>
+
         <a
           href="/CV_NnamdiUmeh.pdf"
           target="_blank"

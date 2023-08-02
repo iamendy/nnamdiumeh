@@ -5,6 +5,12 @@ import { motion } from "framer-motion";
 import works from "../../../constants/works";
 import { useRouter } from "next/router";
 
+const ExtLink = ({ link, text }: { link: string; text: string }) => (
+  <a href={link} target="_blank" className="underline">
+    {text}
+  </a>
+);
+
 const Index = () => {
   const router = useRouter();
   const work = works?.filter((d) => d.title == router?.query?.slug)[0];
@@ -35,18 +41,32 @@ const Index = () => {
 
           <div className="flex flex-col gap-y-6">
             {work?.description.map((d, i) => (
-              <motion.p
-                initial={{ y: 10, opacity: 0 }}
-                animate={{
-                  y: 0,
-                  opacity: 1,
-                  transition: { delay: 0.2, duration: 0.4 },
-                }}
-                className="leading-[1.6em] lg:text-[20px] xl:text-[24px]"
-              >
-                {d}
-              </motion.p>
+              <>
+                <motion.p
+                  initial={{ y: 10, opacity: 0 }}
+                  animate={{
+                    y: 0,
+                    opacity: 1,
+                    transition: { delay: 0.2, duration: 0.4 },
+                  }}
+                  className="leading-[1.6em] lg:text-[20px] xl:text-[24px]"
+                >
+                  {d}
+                </motion.p>
+              </>
             ))}
+
+            <motion.p
+              initial={{ y: 10, opacity: 0 }}
+              animate={{
+                y: 0,
+                opacity: 1,
+                transition: { delay: 0.2, duration: 0.4 },
+              }}
+              className="leading-[1.6em] lg:text-[20px] xl:text-[24px]"
+            >
+              <ExtLink link={work?.ext.link} text={work?.ext.text} />
+            </motion.p>
           </div>
 
           <div className="space-x-3">

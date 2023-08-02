@@ -1,15 +1,15 @@
-import js from "../../public/img/logos/javascript.svg";
-import ts from "../../public/img/logos/typescript.svg";
-import bootstrap from "../../public/img/logos/bootstrap.svg";
-import css from "../../public/img/logos/css.svg";
-import tailwind from "../../public/img/logos/tailwind.svg";
-import next from "../../public/img/logos/next.svg";
-import nest from "../../public/img/logos/nest.svg";
-import react from "../../public/img/logos/react.svg";
-import sass from "../../public/img/logos/sass.svg";
-import hardhat from "../../public/img/logos/hardhat.svg";
-import truffle from "../../public/img/logos/truffle.svg";
-import ethers from "../../public/img/logos/ethers.svg";
+import js from "../../../public/img/logos/javascript.svg";
+import ts from "../../../public/img/logos/typescript.svg";
+import bootstrap from "../../../public/img/logos/bootstrap.svg";
+import css from "../../../public/img/logos/css.svg";
+import tailwind from "../../../public/img/logos/tailwind.svg";
+import next from "../../../public/img/logos/next.svg";
+import nest from "../../../public/img/logos/nest.svg";
+import react from "../../../public/img/logos/react.svg";
+import sass from "../../../public/img/logos/sass.svg";
+import hardhat from "../../../public/img/logos/hardhat.svg";
+import truffle from "../../../public/img/logos/truffle.svg";
+import ethers from "../../../public/img/logos/ethers.svg";
 import Image from "next/image";
 
 import { motion } from "framer-motion";
