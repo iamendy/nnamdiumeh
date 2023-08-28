@@ -54,6 +54,37 @@ export const works: Work[] = [
     year: "2023",
   },
   {
+    title: "Chainwise",
+    description: [
+      "Chainwise claimed second position on the just concluded CELO x Bunzz hackathon at Blockchain Nigeria User Group(BNUG) summit held in August at the Civic Center Lagos. Chainwise is a influencer/community reputation system for web3.",
+      "Chainwise is a fullstack dApp solution that connects businesses with web3 influencers and communitites while eliminating bad actors.",
+    ],
+    ext: {
+      text: "View Announcement Tweet (Soon)",
+      link: "#",
+    },
+
+    thumbnail: "/img/chainwise.jpg",
+    tags: ["NextJs", "Solidity", "Prisma", "PostGreSQL"],
+    links: [
+      {
+        name: "Live Link",
+        link: "https://chainwise.vercel.app",
+      },
+      {
+        name: "GitHub Link",
+        link: "https://github.com/iamendy/chainwise",
+      },
+      {
+        name: "Live Demo",
+        link: "https://www.loom.com/share/954893c940a74b5292a3030785b10446?sid=096ce8ad-0950-42cd-a1e4-112b3f4058df",
+      },
+    ],
+    client: "CELO X Bunzz",
+    role: "Hacker",
+    year: "2023",
+  },
+  {
     title: "Piggie",
     description: [
       "Piggie Bank is a decentralized application that helps users save on the blockchain. With Piggie, users can lock their tokens for a certain amount of time to avoid impulse spending.",

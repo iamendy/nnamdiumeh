@@ -17,13 +17,16 @@ const Index = () => {
 
   return (
     <section className="px-[24px] lg:px-[48px] xl:max-w-7xl xl:mx-auto flex flex-col pt-32 pb-28 lg:pt-[250px] lg:pb-[200px]">
-      <Link href="/works" className="w-fit">
+      <div
+        onClick={() => router?.back()}
+        className="w-fit hover:cursor-pointer"
+      >
         <div className="flex space-x-1 items-center hover:scale-[105%] transition-all">
           <BackArrow />
 
           <span>Back</span>
         </div>
-      </Link>
+      </div>
 
       <div className="lg:flex lg:justify-between">
         <div className="flex flex-col gap-y-12 lg:gap-y-16 mt-4 lg:w-[60%] overflow-hidden">
