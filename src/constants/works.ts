@@ -56,28 +56,28 @@ export const works: Work[] = [
   {
     title: "Chainwise",
     description: [
-      "Chainwise claimed second position on the just concluded CELO x Bunzz hackathon at Blockchain Nigeria User Group(BNUG) summit held in August at the Civic Center Lagos. Chainwise is a influencer/community reputation system for web3.",
+      "Chainwise claimed second position at the Decentralized Intelligence summit held in August at the Civic Center Lagos. Chainwise is an influencer reputation system for web3.",
       "Chainwise is a fullstack dApp solution that connects businesses with web3 influencers and communitites while eliminating bad actors.",
     ],
     ext: {
-      text: "View Announcement Tweet (Soon)",
-      link: "#",
+      text: "View Announcement Tweet",
+      link: "https://twitter.com/techFiesta_hack/status/1697487958138318949/photo/2",
     },
 
     thumbnail: "/img/chainwise.jpg",
-    tags: ["NextJs", "Solidity", "Prisma", "PostGreSQL"],
+    tags: ["NextJs", "Prisma", "PostgreSQL"],
     links: [
       {
         name: "Live Link",
         link: "https://chainwise.vercel.app",
       },
       {
-        name: "GitHub Link",
+        name: "GitHub",
         link: "https://github.com/iamendy/chainwise",
       },
       {
         name: "Live Demo",
-        link: "https://www.loom.com/share/954893c940a74b5292a3030785b10446?sid=096ce8ad-0950-42cd-a1e4-112b3f4058df",
+        link: "https://www.loom.com/share/cfcd06012c2d488fb1b97115dcf2b290",
       },
     ],
     client: "CELO X Bunzz",
