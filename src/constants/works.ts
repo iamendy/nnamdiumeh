@@ -13,7 +13,7 @@ export const works: Work[] = [
       link: "https://twitter.com/oscafest/status/1682013392364613640",
     },
     thumbnail: "/img/suve.jpg",
-    tags: ["NextJs", "TailwindCSS", "Solidity"],
+    tags: ["AxelarSDK", "TailwindCSS", "Solidity"],
     links: [
       {
         name: "Live Link",
@@ -38,7 +38,7 @@ export const works: Work[] = [
       link: "https://twitter.com/web3afrika/status/1651980108637298689",
     },
     thumbnail: "/img/tipx.jpg",
-    tags: ["NextJs", "TailwindCSS", "Solidity"],
+    tags: ["Bunzz", "Metamask", "Solidity"],
     links: [
       {
         name: "Live Link",
@@ -56,16 +56,16 @@ export const works: Work[] = [
   {
     title: "Chainwise",
     description: [
-      "Chainwise claimed second position at the Decentralized Intelligence summit held in August at the Civic Center Lagos. Chainwise is an influencer reputation system for web3.",
+      "Chainwise emerged a winner at the Polygon DevX EMEA tour. Chainwise is an influencer reputation system for web3.",
       "Chainwise is a fullstack dApp solution that connects businesses with web3 influencers and communitites while eliminating bad actors.",
     ],
     ext: {
       text: "View Announcement Tweet",
-      link: "https://twitter.com/techFiesta_hack/status/1697487958138318949/photo/2",
+      link: "https://x.com/0xpolygondevs/status/1702620488806056299",
     },
 
     thumbnail: "/img/chainwise.jpg",
-    tags: ["NextJs", "Prisma", "PostgreSQL"],
+    tags: ["TwitterAPI", "Prisma", "PostgreSQL"],
     links: [
       {
         name: "Live Link",
@@ -80,34 +80,8 @@ export const works: Work[] = [
         link: "https://www.loom.com/share/cfcd06012c2d488fb1b97115dcf2b290",
       },
     ],
-    client: "CELO X Bunzz",
+    client: "Polygon",
     role: "Hacker",
-    year: "2023",
-  },
-  {
-    title: "Piggie",
-    description: [
-      "Piggie Bank is a decentralized application that helps users save on the blockchain. With Piggie, users can lock their tokens for a certain amount of time to avoid impulse spending.",
-      "It is deployed on Celo network and also features a $PKT faucet.",
-    ],
-    ext: {
-      text: "Read article here",
-      link: "https://nnamdi.hashnode.dev/build-and-deploy-a-piggy-bank-dapp-on-celo",
-    },
-    thumbnail: "/img/piggie.jpg",
-    tags: ["NextJs", "TailwindCSS", "Solidity"],
-    links: [
-      {
-        name: "Live Link",
-        link: "https://piggie.vercel.app",
-      },
-      {
-        name: "GitHub Link",
-        link: "https://github.com/iamendy/piggie",
-      },
-    ],
-    client: "Blog Article",
-    role: "Writer",
     year: "2023",
   },
 ];
