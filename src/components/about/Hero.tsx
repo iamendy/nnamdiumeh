@@ -14,7 +14,7 @@ const Hero = () => {
           viewport={{ once: true }}
           className="lg:hidden text-[38px] font-semibold leading-tight mb-9"
         >
-          <h1>Hello, I am Nnamdi, a developer by heart.</h1>
+          <h1>Hello, I am Nnamdi, an engineer by heart.</h1>
         </motion.div>
 
         {/* Desktop animation */}
@@ -36,10 +36,10 @@ const Hero = () => {
           </motion.div>
           <motion.div className="flex xl:text-[88px]">
             <motion.h1 variants={opacity} custom={2} className="mr-5">
-              a developer
+              an engineer
             </motion.h1>{" "}
             <motion.h1 variants={opacity} custom={3}>
-              by heart
+              by heart.
             </motion.h1>
           </motion.div>
         </motion.div>
@@ -68,8 +68,8 @@ const Hero = () => {
             viewport={{ once: true }}
             className="lg:leading-[1.6em]"
           >
-            An exceptionally creative and visionary individual with a solid
-            foundation in Javascript web development, strategic planning, and
+            An exceptionally creative and visionary individual with solid
+            foundation in fullstack web development, system design, and
             technical writing.
           </motion.p>
 
@@ -80,22 +80,8 @@ const Hero = () => {
             custom={2}
             viewport={{ once: true }}
           >
-            A dynamic entrepreneur who successfully established Premium
-            Interiors NG, an interior design company that has provided design
-            solutions for more than five homes and delivered top-quality
-            furniture products.
-          </motion.p>
-
-          <motion.p
-            variants={fadeSlideUp}
-            initial="hidden"
-            whileInView="visible"
-            custom={2}
-            viewport={{ once: true }}
-          >
-            In addition to my professional work, I have a strong passion for
-            writing. I am highly motivated to embark on new challenges and
-            constantly seek opportunities to expand my knowledge and skills.
+            Highly motivated to embark on new challenges and constantly seek
+            opportunities to expand my knowledge and skills.
           </motion.p>
         </div>
       </div>

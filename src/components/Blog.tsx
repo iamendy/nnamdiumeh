@@ -12,7 +12,7 @@ interface Blog {
 const Blog = ({ blog }: { blog: Blog }) => {
   return (
     <motion.a
-      href={`https://blog.nnamdiumeh.dev/${blog.slug}`}
+      href={`${process.env.NEXT_PUBLIC_BLOG_URL}/${blog.slug}`}
       target="_blank"
       initial={{ opacity: 0, y: 0 }}
       whileInView={{

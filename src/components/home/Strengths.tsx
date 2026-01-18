@@ -4,7 +4,7 @@ import bootstrap from "../../../public/img/logos/bootstrap.svg";
 import css from "../../../public/img/logos/css.svg";
 import tailwind from "../../../public/img/logos/tailwind.svg";
 import next from "../../../public/img/logos/next.svg";
-import nest from "../../../public/img/logos/nest.svg";
+import laravel from "../../../public/img/logos/laravel.svg";
 import react from "../../../public/img/logos/react.svg";
 import sass from "../../../public/img/logos/sass.svg";
 import hardhat from "../../../public/img/logos/hardhat.svg";
@@ -67,14 +67,6 @@ const Strengths = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-
-              <div className="w-12 h-12 flex items-center justify-center lg:w-16 lg:h-13">
-                <Image
-                  src={nest}
-                  alt="Nest Js"
-                  className="w-full h-full object-contain"
-                />
-              </div>
             </div>
 
             <div className="flex space-x-6 ">
@@ -114,7 +106,7 @@ const Strengths = () => {
             <div className="flex space-x-6 ">
               <div className="w-12 h-12 flex items-center justify-center lg:w-16 lg:h-13">
                 <Image
-                  src={truffle}
+                  src={laravel}
                   alt="Javascript"
                   className="w-full h-full object-contain"
                 />
@@ -148,8 +140,8 @@ const Strengths = () => {
             className="lg:leading-[1.6em]"
           >
             I have built successful products for clients and businesses ranging
-            from marketing websites to complex solutions with focus on fast,
-            elegant, and accessible user experiences.
+            from marketing websites to complex solutions with focus on security,
+            speed, and elegant user experiences.
           </motion.p>
 
           <motion.p
@@ -160,8 +152,8 @@ const Strengths = () => {
             viewport={{ once: true }}
           >
             Equipped with just the right tools, and can absolutely function
-            independently of them to deliver fast, resilient solutions optimized
-            for scale - from UI designs to pixel perfect results.
+            independently of them to deliver fast and resilient solutions
+            optimized for scale - from system design to pixel perfect results.
           </motion.p>
 
           <motion.p
@@ -171,8 +163,9 @@ const Strengths = () => {
             custom={2}
             viewport={{ once: true }}
           >
-            Passionate about web3 development. I enjoy contributing to projects
-            that makes a difference and helping others create success.
+            Passionate about web3. I also enjoy participating in web3 hackathons
+            and contributing to projects that makes a difference and help others
+            create success.
           </motion.p>
         </div>
       </div>

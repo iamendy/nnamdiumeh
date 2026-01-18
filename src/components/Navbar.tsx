@@ -52,7 +52,7 @@ const Navbar = () => {
           Works
         </Link>
         <a
-          href="https://blog.nnamdiumeh.dev"
+          href={`${process.env.NEXT_PUBLIC_BLOG_URL}`}
           target="_blank"
           className="lg:text-lg hover:animate-pulse active:animate-none"
         >
@@ -64,14 +64,6 @@ const Navbar = () => {
           className="lg:text-lg hover:animate-pulse active:animate-none"
         >
           Github
-        </a>
-
-        <a
-          href="/CV_NnamdiUmeh.pdf"
-          target="_blank"
-          className="lg:text-lg hover:animate-pulse active:animate-none"
-        >
-          Resume
         </a>
       </motion.div>
       <Menu />

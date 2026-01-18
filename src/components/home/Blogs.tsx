@@ -25,7 +25,7 @@ const Blogs = () => {
 
       <div className="flex items-center justify-center mt-9">
         <a
-          href="https://blog.nnamdiumeh.dev"
+          href={`${process.env.NEXT_PUBLIC_BLOG_URL}`}
           target="_blank"
           className="rounded-lg border border-white/20 p-3 flex items-center w-fit hover:border-white hover:text-white/90 active:text-white transition-colors"
         >

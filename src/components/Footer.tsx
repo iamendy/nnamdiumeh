@@ -55,8 +55,8 @@ const Footer = () => {
 
           <div className="lg:h-full lg:pt-[6rem]">
             <p className="text-center self-center lg:text-left lg:text-xl lg:w-[70%] xl:w-[65%] lg:ml-auto">
-              Currently open to new opportunities. Need a skilled frontend
-              developer? Let’s talk about your next big thing!
+              Currently open to new opportunities. Need a skilled fullstack
+              engineer? Let’s talk about your next big thing!
             </p>
           </div>
         </div>
@@ -87,17 +87,6 @@ const Footer = () => {
             className="flex items-center hover:animate-pulse"
           >
             <span>Twitter</span> &nbsp; <Arrow />
-          </motion.a>
-          <motion.a
-            variants={slideUp}
-            initial="hidden"
-            whileInView="visible"
-            custom={2}
-            href="/CV_NnamdiUmeh.pdf"
-            target="_blank"
-            className="flex items-center hover:animate-pulse"
-          >
-            <span>Resume</span> &nbsp; <Arrow />
           </motion.a>
         </div>
         <motion.div

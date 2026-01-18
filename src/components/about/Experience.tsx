@@ -27,7 +27,7 @@ const Experience = () => {
             Tunga
           </h3>
           <p className="mb-4 lg:text-[20px] xl:text-[24px]">
-            Frontend Developer
+            Fullstack Engineer
           </p>
           <p className="text-white/50 xl:text-[20px]">2020 - Present</p>
         </motion.div>

@@ -19,6 +19,7 @@ const Slides = () => {
   });
   return (
     <section className="my-[200px] flex flex-col flex-nowrap  items-center overflow-clip ">
+      {/* TOP */}
       <div className="w-full flex flex-nowrap justify-center ">
         {/* Mobile View */}
         <motion.p
@@ -27,7 +28,7 @@ const Slides = () => {
             translateX: topXMobile,
           }}
         >
-          Adaptive Design • Rest API • Agile
+          Responsive • Scalable • Apps
         </motion.p>
 
         {/* Desktop View */}
@@ -37,17 +38,18 @@ const Slides = () => {
             translateX: topX,
           }}
         >
-          Adaptive Design • Rest API • Agile
+          Responsive • Scalable • Apps
         </motion.p>
       </div>
 
+      {/* BOTTOM */}
       <div className="w-full flex flex-nowrap justify-center ">
         {/* Desktop View */}
         <motion.p
           style={{ translateX: bottomX }}
           className="hidden lg:block text-[32px] whitespace-nowrap leading-[1.4em] lg:text-[80px] font-semibold"
         >
-          Responsive • Scalable • User Experience
+          System Design • Rest APIs • Web3
         </motion.p>
 
         {/* Mobile View */}
@@ -55,7 +57,7 @@ const Slides = () => {
           style={{ translateX: bottomXMobile }}
           className="lg:hidden text-[32px] whitespace-nowrap leading-[1.4em] lg:text-[80px] font-semibold"
         >
-          Responsive • Scalable • User Experience
+          System Design • Rest APIs • Web3
         </motion.p>
       </div>
     </section>

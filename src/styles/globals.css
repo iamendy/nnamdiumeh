@@ -32,3 +32,22 @@ body {
     transform: translateX(-70%);
   }
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+  will-change: transform;
+}
+
+/* Pause animation on hover for better UX */
+.likes:hover .animate-scroll {
+  animation-play-state: paused;
+}

@@ -2,6 +2,68 @@ import { Work } from "./interface/work.interface";
 
 export const works: Work[] = [
   {
+    title: "Easy Pay",
+    description: [
+      "A payment link generator for small businesses to help receive payments in seconds!",
+      "EasyPay lets users create listings, share links, and receive USDT payments directly to their wallet. It's great for small businesses, donations, and community contributions.",
+    ],
+    ext: {
+      text: "Eth Global Showcase",
+      link: "https://ethglobal.com/showcase/easypay-xicym",
+    },
+
+    thumbnail: "/img/easypay.png",
+    tags: ["optimsm", "web3", "Blockscout"],
+    links: [
+      {
+        name: "Live Link",
+        link: "https://esypay.vercel.app/",
+      },
+      {
+        name: "GitHub",
+        link: "https://github.com/iamendy/easypay",
+      },
+      {
+        name: "Live Demo",
+        link: "https://ethglobal.com/showcase/easypay-xicym",
+      },
+    ],
+    client: "Optimism",
+    role: "Hacker",
+    year: "2024",
+  },
+  {
+    title: "Chainwise",
+    description: [
+      "Chainwise emerged a winner at the Polygon DevX EMEA tour. Chainwise is an influencer reputation system for web3.",
+      "Chainwise is a fullstack dApp solution that connects businesses with web3 influencers and communitites while eliminating bad actors.",
+    ],
+    ext: {
+      text: "View Announcement Tweet",
+      link: "https://x.com/0xpolygondevs/status/1702620488806056299",
+    },
+
+    thumbnail: "/img/chainwise.jpg",
+    tags: ["TwitterAPI", "Prisma", "PostgreSQL"],
+    links: [
+      {
+        name: "Live Link",
+        link: "https://chainwise.vercel.app",
+      },
+      {
+        name: "GitHub",
+        link: "https://github.com/iamendy/chainwise",
+      },
+      {
+        name: "Live Demo",
+        link: "https://www.loom.com/share/cfcd06012c2d488fb1b97115dcf2b290",
+      },
+    ],
+    client: "Polygon",
+    role: "Hacker",
+    year: "2023",
+  },
+  {
     title: "SUVe",
     description: [
       "SUVe is the winning dApp solution for the Open Source Africa Fest 2023 Hackathon in partnership with Axelar. It is a multichain verification system that utilizes blockchain technology to verify authenticity of Vaccines.",
@@ -50,37 +112,6 @@ export const works: Work[] = [
       },
     ],
     client: "Web3Africa X Bunzz",
-    role: "Hacker",
-    year: "2023",
-  },
-  {
-    title: "Chainwise",
-    description: [
-      "Chainwise emerged a winner at the Polygon DevX EMEA tour. Chainwise is an influencer reputation system for web3.",
-      "Chainwise is a fullstack dApp solution that connects businesses with web3 influencers and communitites while eliminating bad actors.",
-    ],
-    ext: {
-      text: "View Announcement Tweet",
-      link: "https://x.com/0xpolygondevs/status/1702620488806056299",
-    },
-
-    thumbnail: "/img/chainwise.jpg",
-    tags: ["TwitterAPI", "Prisma", "PostgreSQL"],
-    links: [
-      {
-        name: "Live Link",
-        link: "https://chainwise.vercel.app",
-      },
-      {
-        name: "GitHub",
-        link: "https://github.com/iamendy/chainwise",
-      },
-      {
-        name: "Live Demo",
-        link: "https://www.loom.com/share/cfcd06012c2d488fb1b97115dcf2b290",
-      },
-    ],
-    client: "Polygon",
     role: "Hacker",
     year: "2023",
   },

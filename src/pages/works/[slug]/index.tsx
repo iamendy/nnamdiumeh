@@ -44,7 +44,7 @@ const Index = () => {
 
           <div className="flex flex-col gap-y-6">
             {work?.description.map((d, i) => (
-              <>
+              <div key={i}>
                 <motion.p
                   initial={{ y: 10, opacity: 0 }}
                   animate={{
@@ -56,7 +56,7 @@ const Index = () => {
                 >
                   {d}
                 </motion.p>
-              </>
+              </div>
             ))}
 
             <motion.p

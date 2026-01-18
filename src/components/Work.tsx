@@ -2,6 +2,7 @@ import Arrow from "@/components/icons/Arrow";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+//@ts-ignore
 import { Work } from "../constants/interface/work.interface";
 
 const Work = ({

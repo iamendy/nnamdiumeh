@@ -15,7 +15,7 @@ const Works = () => {
         custom={1}
         className="text-[32px] lg:text-[56px] xl:text-[68px] text-white font-extrabold mb-24 lg:mb-[10rem]"
       >
-        Featured Work
+        Featured Hacks
       </motion.h3>
 
       <div className="flex flex-col space-y-20 lg:space-y-[10rem] ">
@@ -24,14 +24,14 @@ const Works = () => {
         ))}
       </div>
 
-      <div className="flex items-center justify-center mt-9 lg:mt-24">
+      {/* <div className="flex items-center justify-center mt-9 lg:mt-24">
         <Link
           href="/works"
           className="rounded-lg border border-white/20 p-3 flex items-center w-fit hover:border-white hover:text-white/90 active:text-white transition-colors"
         >
           <span>View Portfolio</span> &nbsp; <Arrow />
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 };

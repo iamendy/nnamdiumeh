@@ -77,7 +77,7 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
           >
-            Frontend developer with over 4 years experience,
+            Fullstack software engineer building over 7 years.
           </motion.div>
           <motion.div
             variants={slideUp}
@@ -85,8 +85,7 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
           >
-            based in Lagos, Nigeria. I love to craft scalable products that help
-            10x your business growth.
+            Helping businesses craft scalable apps that 10x their growth.
           </motion.div>
         </div>
 
@@ -98,9 +97,8 @@ const Hero = () => {
           animate="visible"
           className="lg:hidden leading-[1.7rem] font-medium"
         >
-          I'm a web developer with over 4 years experience, based in Lagos,
-          Nigeria. I love to craft scalable products that help 10x your business
-          growth.
+          Fullstack software engineer building over 7 years. Helping businesses
+          craft scalable apps that 10x their growth.
         </motion.div>
 
         <div className="mt-12 lg:mt-0 flex justify-end lg:justify-start lg:w-[40%] lg:order-1">
