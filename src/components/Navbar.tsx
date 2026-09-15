@@ -58,13 +58,6 @@ const Navbar = () => {
         >
           Blog
         </a>
-        <a
-          href="https://github.com/iamendy"
-          target="_blank"
-          className="lg:text-lg hover:animate-pulse active:animate-none"
-        >
-          Github
-        </a>
       </motion.div>
       <Menu />
     </nav>

@@ -35,7 +35,7 @@ export const works: Work[] = [
   {
     title: "Chainwise",
     description: [
-      "Chainwise emerged a winner at the Polygon DevX EMEA tour. Chainwise is an influencer reputation system for web3.",
+      "Chainwise emerged winner at the Polygon DevX EMEA tour. Chainwise is an influencer reputation system for web3.",
       "Chainwise is a fullstack dApp solution that connects businesses with web3 influencers and communitites while eliminating bad actors.",
     ],
     ext: {
@@ -93,7 +93,7 @@ export const works: Work[] = [
   {
     title: "TipX",
     description: [
-      "TipX is one of the winning dApp solution for the Web3Africa 2023 Hackathon in partnership with Bunzz. With GoTipMe, you can receive tips from your audience directly and securely, using the power of blockchain technology.",
+      "TipX is won dApp solution for the Web3Africa 2023 Hackathon in partnership with Bunzz. With GoTipMe, you can receive tips from your audience directly and securely, using the power of blockchain technology.",
     ],
     ext: {
       text: "View Announcement Tweet",

@@ -6,14 +6,14 @@ function SEOHead({
   href?: string;
 }) {
   const content =
-    "A software engineer with over 4 years experience in crafting fast and scalable products that help 10x your business growth.";
+    "Fullstack engineer with over 7+ years crafting fast and scalable web applications that help 10x your business growth.";
   return (
     <Head>
       <title> Nnamdi Umeh </title>
       <meta name="description" content={content} />
       <meta
         name="keywords"
-        content="nnamdi umeh nnamdiumeh nnamdipremium premium stoftware engineer 10xEngineer developer upwork specialist expert developer"
+        content="nnamdi umeh nnamdiumeh software engineer 10xEngineer developer upwork specialist expert developer"
       />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="canonical" href={href} />

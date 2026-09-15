@@ -68,9 +68,8 @@ const Hero = () => {
             viewport={{ once: true }}
             className="lg:leading-[1.6em]"
           >
-            An exceptionally creative and visionary individual with solid
-            foundation in fullstack web development, system design, and
-            technical writing.
+            An exceptionally creative with solid foundation in fullstack web
+            development, system design, and technical writing.
           </motion.p>
 
           <motion.p

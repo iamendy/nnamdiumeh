@@ -151,9 +151,9 @@ const Strengths = () => {
             custom={2}
             viewport={{ once: true }}
           >
-            Equipped with just the right tools, and can absolutely function
-            independently of them to deliver fast and resilient solutions
-            optimized for scale - from system design to pixel perfect results.
+            Equipped with the right skills to deliver fast and resilient web
+            applications optimized for scale - from system design to pixel
+            perfect results.
           </motion.p>
 
           <motion.p

@@ -18,7 +18,7 @@ const Index = () => {
   return (
     <section className="px-[24px] lg:px-[48px] xl:max-w-7xl xl:mx-auto flex flex-col pt-32 pb-28 lg:pt-[250px] lg:pb-[200px]">
       <div
-        onClick={() => router?.back()}
+        onClick={() => router.push("/#works")}
         className="w-fit hover:cursor-pointer"
       >
         <div className="flex space-x-1 items-center hover:scale-[105%] transition-all">
