@@ -152,8 +152,8 @@ const Strengths = () => {
             viewport={{ once: true }}
           >
             Equipped with the right skills to deliver fast and resilient web
-            applications optimized for scale - from system design to pixel
-            perfect results.
+            applications optimized for scale - from systems design to pixel
+            perfect results and deployment.
           </motion.p>
 
           <motion.p
